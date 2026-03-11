@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Project Path="LaBancaUCB.Api/LaBancaUCB.Api.csproj" />
+  <Project Path="LaBancaUCB.Core/LaBancaUCB.Core.csproj" />
+  <Project Path="LaBancaUCB.Infrastructure/LaBancaUCB.Infrastructure.csproj" />
+</Solution>

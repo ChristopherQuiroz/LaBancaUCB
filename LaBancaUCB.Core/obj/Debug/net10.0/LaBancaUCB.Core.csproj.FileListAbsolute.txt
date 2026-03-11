@@ -1,0 +1,12 @@
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.sourcelink.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
