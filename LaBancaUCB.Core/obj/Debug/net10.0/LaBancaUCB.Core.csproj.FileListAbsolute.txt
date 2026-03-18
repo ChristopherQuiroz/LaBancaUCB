@@ -1,0 +1,12 @@
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.sourcelink.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
