@@ -8,6 +8,7 @@ public class UsuarioConfiguration : IEntityTypeConfiguration<Usuario>
 {
     public void Configure(EntityTypeBuilder<Usuario> builder)
     {
+        builder.Ignore(u => u.Id);
         builder.HasKey(u => u.IdUsuario);
         builder.ToTable("Usuarios");
 

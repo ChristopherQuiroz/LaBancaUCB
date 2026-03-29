@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LaBancaUCB.Core\LaBancaUCB.Core.csproj" />
     <ProjectReference Include="..\LaBancaUCB.Infrastructure\LaBancaUCB.Infrastructure.csproj" />
+    <ProjectReference Include="..\LaBancaUCB.Services\LaBancaUCB.Services.csproj" />
   </ItemGroup>
 
 </Project>

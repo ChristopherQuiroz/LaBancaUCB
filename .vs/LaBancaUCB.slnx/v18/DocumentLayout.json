@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.core\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.infrastructure\\data\\configurations\\beneficiarioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\configurations\\beneficiarioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.infrastructure\\data\\configurations\\sesioneconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\configurations\\sesioneconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.infrastructure\\data\\configurations\\cuentaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\configurations\\cuentaconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.infrastructure\\data\\configurations\\usuarioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\configurations\\usuarioconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|i:\\descargas 2\\tecweb\\labancaucb\\labancaucb.core\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioDto.cs",
-              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\DTOs\\UsuarioDto.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Core\\DTOs\\UsuarioDto.cs",
-              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\DTOs\\UsuarioDto.cs",
-              "RelativeToolTip": "LaBancaUCB.Core\\DTOs\\UsuarioDto.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA5wAwAAAABAAAAAAAAAA==",
+              "Title": "BeneficiarioConfiguration.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\BeneficiarioConfiguration.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\Configurations\\BeneficiarioConfiguration.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\BeneficiarioConfiguration.cs",
+              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\Configurations\\BeneficiarioConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T21:03:13.915Z",
+              "WhenOpened": "2026-03-29T02:11:12.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\UsuarioController.cs",
-              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAowEUAAABHAAAAAAAAAA==",
+              "Title": "SesioneConfiguration.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\SesioneConfiguration.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\Configurations\\SesioneConfiguration.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\SesioneConfiguration.cs",
+              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\Configurations\\SesioneConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T20:57:46.256Z",
+              "WhenOpened": "2026-03-29T02:10:02.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CuentaConfiguration.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\CuentaConfiguration.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\Configurations\\CuentaConfiguration.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\CuentaConfiguration.cs",
+              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\Configurations\\CuentaConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T02:07:32.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioConfiguration.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\UsuarioConfiguration.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\Configurations\\UsuarioConfiguration.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\UsuarioConfiguration.cs",
+              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\Configurations\\UsuarioConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T01:58:56.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Core\\Entities\\Usuario.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Usuario.cs",
+              "RelativeToolTip": "LaBancaUCB.Core\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-29T01:58:02.575Z",
               "EditorCaption": ""
             }
           ]

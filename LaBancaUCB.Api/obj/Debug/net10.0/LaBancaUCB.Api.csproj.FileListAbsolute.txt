@@ -130,3 +130,8 @@ I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Inf
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.pdb
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\AutoMapper.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb

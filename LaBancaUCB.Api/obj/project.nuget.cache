@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+O+OjOBLto8=",
+  "dgSpecHash": "6vrLttov9vQ=",
   "success": true,
   "projectFilePath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Api\\LaBancaUCB.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.1\\fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.11.0\\fluentvalidation.dependencyinjectionextensions.11.11.0.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\9.0.5\\microsoft.aspnetcore.jsonpatch.9.0.5.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\9.0.5\\microsoft.aspnetcore.mvc.newtonsoftjson.9.0.5.nupkg.sha512",
