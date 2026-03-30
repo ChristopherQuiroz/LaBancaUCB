@@ -1,0 +1,35 @@
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.deps.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.runtimeconfig.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.AssemblyReference.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfo.cs
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.sourcelink.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\refint\LaBancaUCB.Infrastructure.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.genruntimeconfig.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\ref\LaBancaUCB.Infrastructure.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaU.1DE53456.Up2Date
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.deps.json
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.runtimeconfig.json
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.dll
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.AssemblyReference.cache
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfoInputs.cache
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfo.cs
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.CoreCompileInputs.cache
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaU.1DE53456.Up2Date
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\refint\LaBancaUCB.Infrastructure.dll
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.genruntimeconfig.cache
+E:\Repos del Christofer\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB-ImplementacionDeMetodosFaltantesDeRestoDeEntidades\LaBancaUCB.Infrastructure\obj\Debug\net10.0\ref\LaBancaUCB.Infrastructure.dll
