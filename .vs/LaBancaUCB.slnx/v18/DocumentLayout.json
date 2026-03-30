@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DESCARGAS_2\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\descargas_2\\labancaucb-implementacion-capainfrastructure-capacore\\labancaucb-implementacion-capainfrastructure-capacore\\labancaucb.api\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransaccionController.cs",
+              "DocumentMoniker": "D:\\DESCARGAS_2\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "ToolTip": "D:\\DESCARGAS_2\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\\LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAADwvzYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T19:04:05.651Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
