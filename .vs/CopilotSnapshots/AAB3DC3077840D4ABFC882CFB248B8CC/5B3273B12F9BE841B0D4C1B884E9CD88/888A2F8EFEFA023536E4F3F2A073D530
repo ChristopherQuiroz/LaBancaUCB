@@ -1,0 +1,18 @@
+﻿using AutoMapper;
+using LaBancaUCB.Core.DTOs;
+using LaBancaUCB.Core.Entities;
+
+namespace LaBancaUCB.Infrastructure.Mappings;
+
+public class TransaccionMenu : Profile
+{
+    public TransaccionMenu()
+    {
+        CreateMap<Transaccion, TransaccionDto>()
+            .ForMember(dest => dest.FechaHora,
+                opt => opt.MapFrom(src => src.FechaTransaccion.HasValue
+                    ? src.FechaTransaccion.Value.ToString("dd/MM/yyyy")
+                    : null));
+        CreateMap<TransaccionDto, Transaccion>();
+    }
+}

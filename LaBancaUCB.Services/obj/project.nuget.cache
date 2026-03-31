@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/5/bbimQos=",
+  "dgSpecHash": "e/Veb+MfrKw=",
   "success": true,
-  "projectFilePath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
+  "projectFilePath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\fluentvalidation\\11.11.0\\fluentvalidation.11.11.0.nupkg.sha512",
@@ -21,17 +21,22 @@
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.5\\microsoft.extensions.logging.abstractions.9.0.5.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.extensions.options\\9.0.5\\microsoft.extensions.options.9.0.5.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.5\\microsoft.extensions.primitives.9.0.5.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.17.0\\microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.17.0\\microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.identitymodel.logging\\8.17.0\\microsoft.identitymodel.logging.8.17.0.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.17.0\\microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
     "C:\\Users\\Matias Mancilla\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
-    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512"
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0.nupkg.sha512",
+    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.17.0\\system.identitymodel.tokens.jwt.8.17.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1903",
       "level": "Warning",
       "message": "El paquete \"AutoMapper\" 13.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
-      "projectPath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
+      "projectPath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
       "warningLevel": 1,
-      "filePath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
+      "filePath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\LaBancaUCB.Services.csproj",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net10.0"

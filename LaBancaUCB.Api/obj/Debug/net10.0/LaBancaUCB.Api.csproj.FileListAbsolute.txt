@@ -135,3 +135,581 @@ I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidati
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
 I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.Development.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.staticwebassets.endpoints.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.exe
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.deps.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.runtimeconfig.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\AutoMapper.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Humanizer.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\MySqlConnector.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.CodeDom.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Convention.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Hosting.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Runtime.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.TypedParts.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.AssemblyReference.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.GeneratedMSBuildEditorConfig.editorconfig
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfoInputs.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfo.cs
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.CoreCompileInputs.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cs
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\scopedcss\bundle\LaBancaUCB.Api.styles.css
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.development.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\swae.build.ex.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaU.8A7218DD.Up2Date
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\refint\LaBancaUCB.Api.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.genruntimeconfig.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\ref\LaBancaUCB.Api.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.Development.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.staticwebassets.endpoints.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.exe
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.deps.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.runtimeconfig.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\AutoMapper.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Humanizer.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\MySqlConnector.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.CodeDom.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Convention.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Hosting.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Runtime.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.TypedParts.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.AssemblyReference.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfoInputs.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfo.cs
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.CoreCompileInputs.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\scopedcss\bundle\LaBancaUCB.Api.styles.css
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.development.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\swae.build.ex.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaU.8A7218DD.Up2Date
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\refint\LaBancaUCB.Api.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.genruntimeconfig.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Api\obj\Debug\net10.0\ref\LaBancaUCB.Api.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.AssemblyReference.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfoInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.CoreCompileInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.sourcelink.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\refint\LaBancaUCB.Api.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.Development.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.staticwebassets.endpoints.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.exe
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.deps.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.runtimeconfig.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\AutoMapper.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Humanizer.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\MySqlConnector.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.CodeDom.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Convention.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Hosting.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Runtime.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.TypedParts.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\scopedcss\bundle\LaBancaUCB.Api.styles.css
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.development.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\swae.build.ex.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaU.8A7218DD.Up2Date
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.genruntimeconfig.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\ref\LaBancaUCB.Api.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.Development.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\appsettings.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.staticwebassets.endpoints.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.exe
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.deps.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.runtimeconfig.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Api.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\AutoMapper.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.AspNetCore.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Humanizer.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.JsonPatch.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Build.Locator.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Mono.TextTemplating.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\MySqlConnector.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Newtonsoft.Json.Bson.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\Pomelo.EntityFrameworkCore.MySql.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.CodeDom.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.AttributedModel.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Convention.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Hosting.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.Runtime.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.Composition.TypedParts.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.AssemblyReference.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.AssemblyInfo.cs
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cs
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.MvcApplicationPartsAssemblyInfo.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.sourcelink.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\scopedcss\bundle\LaBancaUCB.Api.styles.css
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.development.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\swae.build.ex.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaU.8A7218DD.Up2Date
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\refint\LaBancaUCB.Api.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\LaBancaUCB.Api.genruntimeconfig.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Api\obj\Debug\net10.0\ref\LaBancaUCB.Api.dll

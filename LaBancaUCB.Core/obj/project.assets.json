@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj",
+      "projectUniqueName": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj",
       "projectName": "LaBancaUCB.Core",
-      "projectPath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj",
+      "projectPath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj",
       "packagesPath": "C:\\Users\\Matias Mancilla\\.nuget\\packages\\",
-      "outputPath": "I:\\DESCARGAS 2\\Tecweb\\LaBancaUCB\\LaBancaUCB.Core\\obj\\",
+      "outputPath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

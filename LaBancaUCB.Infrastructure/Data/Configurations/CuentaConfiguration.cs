@@ -20,5 +20,9 @@ public class CuentaConfiguration : IEntityTypeConfiguration<Cuenta>
         builder.Property(c => c.Moneda).HasColumnName("moneda");
         builder.Property(c => c.Estado).HasColumnName("estado");
         builder.Property(c => c.FechaApertura).HasColumnName("fecha_apertura");
+
+        builder.HasOne(c => c.IdUsuarioNavigation)
+               .WithMany(u => u.Cuenta)
+               .HasForeignKey(c => c.IdUsuario);
     }
 }

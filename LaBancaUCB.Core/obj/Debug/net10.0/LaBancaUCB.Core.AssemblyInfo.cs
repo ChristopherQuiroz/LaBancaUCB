@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LaBancaUCB.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3646c8c8284204aeafecce88009fd29ca81d4709")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d4421aeb3791b165e2af6ccf2148f03fd634854")]
 [assembly: System.Reflection.AssemblyProductAttribute("LaBancaUCB.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LaBancaUCB.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

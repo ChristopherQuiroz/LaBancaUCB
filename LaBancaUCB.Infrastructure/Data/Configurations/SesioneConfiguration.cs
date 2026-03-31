@@ -19,5 +19,9 @@ public class SesioneConfiguration : IEntityTypeConfiguration<Sesione>
         builder.Property(s => s.Activo).HasColumnName("activo");
         builder.Property(s => s.ExpiradoEn).HasColumnName("expirado_en");
         builder.Property(s => s.CreadoEn).HasColumnName("creado_en");
+
+        builder.HasOne(s => s.IdUsuarioNavigation)
+               .WithMany(u => u.Sesiones)
+               .HasForeignKey(s => s.IdUsuario);
     }
 }
