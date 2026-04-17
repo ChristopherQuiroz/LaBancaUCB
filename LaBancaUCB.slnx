@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="LaBancaUCB.Api/LaBancaUCB.Api.csproj" />
+  <Project Path="LaBancaUCB.Core/LaBancaUCB.Core.csproj" />
+  <Project Path="LaBancaUCB.Infrastructure/LaBancaUCB.Infrastructure.csproj" />
+  <Project Path="LaBancaUCB.Services/LaBancaUCB.Services.csproj" Id="cbb783e5-0c06-4759-ba2d-6ce9449e0b48" />
+</Solution>

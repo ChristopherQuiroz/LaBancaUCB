@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb-cambios\\labancaucb-cambios\\labancaucb.api\\controllers\\admintransaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\admintransaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb-cambios\\labancaucb-cambios\\labancaucb.api\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb-cambios\\labancaucb-cambios\\labancaucb.api\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\cuentacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb-cambios\\labancaucb-cambios\\labancaucb.api\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\transaccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb-cambios\\labancaucb-cambios\\labancaucb.api\\controllers\\balanceresponsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\balanceresponsecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminTransaccionesController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\AdminTransaccionesController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\AdminTransaccionesController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\AdminTransaccionesController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\AdminTransaccionesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:34:58.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CuentaController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\CuentaController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\CuentaController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\CuentaController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\CuentaController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:14:27.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransaccionesController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:12:30.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransaccionController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\TransaccionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:12:26.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BalanceResponseController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\BalanceResponseController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\BalanceResponseController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Api\\Controllers\\BalanceResponseController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\BalanceResponseController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwBkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T18:12:04.065Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
