@@ -8,5 +8,5 @@ public class BeneficiarioDto
     public string BancoDestino { get; set; }
     public string NombreTitular { get; set; }
     public bool EsExterior { get; set; }
-    public string CreadoEn { get; set; }
+    public string? CreadoEn { get; set; }
 }

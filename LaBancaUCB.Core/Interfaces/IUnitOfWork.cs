@@ -12,6 +12,10 @@ namespace LaBancaUCB.Core.Interfaces
 
         IBaseRepository<Beneficiario> BeneficiarioRepository { get; }
         IBaseRepository<Sesione> SesioneRepository { get; }
+        IBaseRepository<Solicitud> SolicitudRepository { get; }
+        IBaseRepository<Prestamo> PrestamoRepository { get; }
+        IBaseRepository<Administrador> AdministradorRepository { get; }
+        IBaseRepository<Seguro> SeguroRepository { get; }
 
         void SaveChanges();
         Task SaveChangesAsync();

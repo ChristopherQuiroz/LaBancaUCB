@@ -11,4 +11,5 @@ public interface IUsuarioService
     Task InsertUsuarioAsync(Usuario usuario);
     Task UpdateUsuarioAsync(Usuario usuario);
     Task DeleteUsuarioAsync(long id);
+    Task ChangePasswordAsync(long usuarioId, string currentPassword, string newPassword);
 }

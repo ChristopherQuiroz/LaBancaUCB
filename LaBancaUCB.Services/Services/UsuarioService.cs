@@ -56,6 +56,21 @@ public class UsuarioService : IUsuarioService
         await _unitOfWork.SaveChangesAsync();
     }
 
+    public async Task ChangePasswordAsync(long usuarioId, string currentPassword, string newPassword)
+    {
+        var usuario = await _unitOfWork.UsuarioRepository.GetByIdAsync(usuarioId);
+        if (usuario == null)
+            throw new BusinessException("Usuario no encontrado.", HttpStatusCode.NotFound);
+
+        // En este proyecto la contraseña se almacena en PasswordHash sin hashing
+        if (usuario.PasswordHash != currentPassword)
+            throw new BusinessException("La contraseña actual es incorrecta.", HttpStatusCode.BadRequest);
+
+        usuario.PasswordHash = newPassword;
+        _unitOfWork.UsuarioRepository.Update(usuario);
+        await _unitOfWork.SaveChangesAsync();
+    }
+
     private readonly string[] _palabrasNoPermitidas =
     {
         "violencia", "odio", "maricon", "pornografia", "pete"

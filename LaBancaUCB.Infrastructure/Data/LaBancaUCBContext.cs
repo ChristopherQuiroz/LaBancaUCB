@@ -13,7 +13,11 @@ public partial class LaBancaUCBContext : DbContext
     public virtual DbSet<Usuario> Usuarios { get; set; }
     public virtual DbSet<Sesione> Sesiones { get; set; }
     public virtual DbSet<Cuenta> Cuentas { get; set; }
+    public virtual DbSet<Seguro> Seguros { get; set; }
     public virtual DbSet<Beneficiario> Beneficiarios { get; set; }
+    public virtual DbSet<Solicitud> Solicitudes { get; set; }
+    public virtual DbSet<Prestamo> Prestamos { get; set; }
+    public virtual DbSet<Administrador> Administradores { get; set; }
     public virtual DbSet<Transaccion> Transacciones { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

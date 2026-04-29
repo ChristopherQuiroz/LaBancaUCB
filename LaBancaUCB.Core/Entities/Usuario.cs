@@ -23,4 +23,5 @@ public partial class Usuario : BaseEntity
     public virtual ICollection<Beneficiario> Beneficiarios { get; set; } = new List<Beneficiario>();
     public virtual ICollection<Cuenta> Cuenta { get; set; } = new List<Cuenta>();
     public virtual ICollection<Sesione> Sesiones { get; set; } = new List<Sesione>();
+    public virtual ICollection<Solicitud> Solicitudes { get; set; } = new List<Solicitud>();
 }

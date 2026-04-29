@@ -20,5 +20,9 @@ public class BeneficiarioConfiguration : IEntityTypeConfiguration<Beneficiario>
         builder.Property(b => b.NombreTitular).HasColumnName("nombre_titular");
         builder.Property(b => b.EsExterior).HasColumnName("es_exterior");
         builder.Property(b => b.CreadoEn).HasColumnName("creado_en");
+        builder.HasOne(b => b.IdUsuarioOwnerNavigation)
+               .WithMany(u => u.Beneficiarios)
+               .HasForeignKey(b => b.IdUsuarioOwner)
+               .OnDelete(DeleteBehavior.Cascade);
     }
 }

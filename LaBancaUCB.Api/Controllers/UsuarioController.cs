@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using FluentValidation; 
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 using LaBancaUCB.Api.Response;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
@@ -19,17 +21,34 @@ public class UsuarioController : ControllerBase
     private readonly IMapper _mapper;
     private readonly CrearUsuarioValidator _crearValidator;
     private readonly ActualizarUsuarioValidator _actualizarValidator;
+    private readonly ChangePasswordDtoValidator _changePasswordValidator;
 
     public UsuarioController(
         IUsuarioService usuarioService,
         IMapper mapper,
         CrearUsuarioValidator crearValidator,
-        ActualizarUsuarioValidator actualizarValidator)
+        ActualizarUsuarioValidator actualizarValidator,
+        ChangePasswordDtoValidator changePasswordValidator)
     {
         _usuarioService = usuarioService;
         _mapper = mapper;
         _crearValidator = crearValidator;
         _actualizarValidator = actualizarValidator;
+        _changePasswordValidator = changePasswordValidator;
+    }
+
+    [HttpPost("change-password")]
+    [Authorize(Roles = "cliente")]
+    public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+    {
+        await _changePasswordValidator.ValidateAndThrowAsync(dto);
+
+        var claim = User.FindFirst(ClaimTypes.NameIdentifier);
+        if (claim == null) return Unauthorized();
+        var usuarioId = long.Parse(claim.Value);
+
+        await _usuarioService.ChangePasswordAsync(usuarioId, dto.CurrentPassword, dto.NewPassword);
+        return NoContent();
     }
 
     [HttpGet]

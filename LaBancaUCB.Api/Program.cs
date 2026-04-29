@@ -21,6 +21,12 @@ builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICuentaService, CuentaService>();
 builder.Services.AddScoped<ITransaccionService, TransaccionService>();
+builder.Services.AddScoped<IBeneficiarioService, BeneficiarioService>();
+builder.Services.AddScoped<ISeguroService, SeguroService>();
+builder.Services.AddScoped<ISolicitudService, SolicitudService>();
+builder.Services.AddScoped<IPrestamoService, PrestamoService>();
+builder.Services.AddScoped<ISolicitudService, SolicitudService>();
+builder.Services.AddScoped<IPrestamoService, PrestamoService>();
 
 builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
 

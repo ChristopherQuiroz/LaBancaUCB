@@ -103,3 +103,21 @@ I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Services\obj\Deb
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Services\obj\Debug\net10.0\refint\LaBancaUCB.Services.dll
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.pdb
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Services\obj\Debug\net10.0\ref\LaBancaUCB.Services.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Services.deps.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Services.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Services.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.csproj.AssemblyReference.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.AssemblyInfoInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.AssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.csproj.CoreCompileInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.sourcelink.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaU.F5246931.Up2Date
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\refint\LaBancaUCB.Services.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\LaBancaUCB.Services.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Services\obj\Debug\net10.0\ref\LaBancaUCB.Services.dll

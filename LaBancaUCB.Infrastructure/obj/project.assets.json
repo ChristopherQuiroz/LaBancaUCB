@@ -2561,23 +2561,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matias Mancilla\\.nuget\\packages\\": {},
+    "C:\\Users\\chris\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj",
+      "projectUniqueName": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj",
       "projectName": "LaBancaUCB.Infrastructure",
-      "projectPath": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Matias Mancilla\\.nuget\\packages\\",
-      "outputPath": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Infrastructure\\obj\\",
+      "projectPath": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
+      "outputPath": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Matias Mancilla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2590,11 +2590,10 @@
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj": {
-              "projectPath": "I:\\DESCARGAS 2\\LaBancaUCB-CAMBIOS\\LaBancaUCB-cambios\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj"
+            "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj": {
+              "projectPath": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\LaBancaUCB.Core.csproj"
             }
           }
         }
@@ -2609,11 +2608,10 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
-        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "AutoMapper": {
@@ -2655,7 +2653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -2938,7 +2936,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"AutoMapper\" 13.0.1 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "message": "Package 'AutoMapper' 13.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
       "libraryId": "AutoMapper",
       "targetGraphs": [
         "net10.0"

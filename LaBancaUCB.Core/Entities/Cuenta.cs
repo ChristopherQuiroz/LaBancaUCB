@@ -20,4 +20,5 @@ public partial class Cuenta : BaseEntity
     public string Estado { get; set; } = null!;
     public DateTime? FechaApertura { get; set; }
     public virtual Usuario IdUsuarioNavigation { get; set; } = null!;
+    public virtual ICollection<Seguro> Seguros { get; set; } = new List<Seguro>();
 }

@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace LaBancaUCB.Core.Entities;
+public class Tarjeta
+{
+    public override long Id
+    {
+        get => IdTarjeta;
+        set => IdTarjeta = value;
+    }
+
+    public long IdTarjeta { get; set; }
+    public long IdCuenta { get; set; }
+    public string tipo { get; set; }
+    public string numeroEnmascarado { get; set; }
+    public DateTime fechaVencimiento { get; set; }
+    public string estado { get; set; }
+    public DateTime fechaCreacion { get; set; }
+
+    public virtual Cuenta IdCuentaNavigation { get; set; } = null!;
+
+    public virtual Beneficiario Beneficiario { get; set; } = null!;
+
+}

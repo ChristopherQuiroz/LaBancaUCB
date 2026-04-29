@@ -103,3 +103,21 @@ I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Infrastructure\o
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.genruntimeconfig.cache
 I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Infrastructure\obj\Debug\net10.0\ref\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.deps.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.runtimeconfig.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.AssemblyReference.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfoInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.AssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.sourcelink.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaU.1DE53456.Up2Date
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\refint\LaBancaUCB.Infrastructure.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\LaBancaUCB.Infrastructure.genruntimeconfig.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Infrastructure\obj\Debug\net10.0\ref\LaBancaUCB.Infrastructure.dll
