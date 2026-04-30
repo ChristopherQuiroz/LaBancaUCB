@@ -1,0 +1,26 @@
+﻿using LaBancaUCB.Core.DTOs;
+using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Core.Interfaces;
+using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Services.Validators;
+using Microsoft.Extensions.Configuration;
+namespace LaBancaUCB.Services.Services;
+
+public class TransactionHistoryService
+{
+    private readonly IBaseRepository<Transaccion> _transaccionRepository;
+    private readonly IConfiguration _configuration;
+
+    public TransactionHistoryService(
+        IBaseRepository<Transaccion> transaccionRepository,
+        IConfiguration configuration)
+    {
+        _transaccionRepository = transaccionRepository;
+        _configuration = configuration;
+    }
+
+    public async Task<TransactionHistoryResponseDto> GetAllTransaccionHistoryAsync(int IdClient, TransactionRequestDto transaccionDto)
+    {
+        
+    }
+}

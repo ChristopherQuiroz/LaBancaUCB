@@ -1,0 +1,80 @@
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.sourcelink.json
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\Tecweb\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+E:\Respos 2 Christofer\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\DESCARGAS_2\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB-Implementacion-capaInfrastructure-capaCore\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.sourcelink.json
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\BancaUCB\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.sourcelink.json
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB2\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB-CAMBIOS\LaBancaUCB-cambios\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.deps.json
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfoInputs.cache
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.AssemblyInfo.cs
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.csproj.CoreCompileInputs.cache
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
+I:\DESCARGAS 2\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB-AplicacionCasosDeUso-8-9-10-11-12-13\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll

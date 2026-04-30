@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|i:\\descargas 2\\labancaucb_elemento2\\labancaucb\\labancaucb.services\\services\\transaccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|solutionrelative:labancaucb.services\\services\\transaccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|i:\\descargas 2\\labancaucb_elemento2\\labancaucb\\labancaucb.api\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\transaccionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|i:\\descargas 2\\labancaucb_elemento2\\labancaucb\\labancaucb.services\\services\\transactionrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|solutionrelative:labancaucb.services\\services\\transactionrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|i:\\descargas 2\\labancaucb_elemento2\\labancaucb\\labancaucb.core\\entities\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\entities\\transaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TransactionRequestService.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\Services\\TransactionRequestService.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Services\\Services\\TransactionRequestService.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\Services\\TransactionRequestService.cs",
+              "RelativeToolTip": "LaBancaUCB.Services\\Services\\TransactionRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T03:01:50.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TransaccionService.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\Services\\TransaccionService.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Services\\Services\\TransaccionService.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Services\\Services\\TransaccionService.cs",
+              "RelativeToolTip": "LaBancaUCB.Services\\Services\\TransaccionService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAswGcAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T03:01:39.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transaccion.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Transaccion.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Core\\Entities\\Transaccion.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Transaccion.cs",
+              "RelativeToolTip": "LaBancaUCB.Core\\Entities\\Transaccion.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvxQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T02:52:09.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransaccionesController.cs",
+              "DocumentMoniker": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "ToolTip": "I:\\DESCARGAS 2\\LaBancaUCB_ELEMENTO2\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\TransaccionesController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T20:06:31.576Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
