@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Threading.Tasks;
 using LaBancaUCB.Core.Entities;
 
@@ -12,10 +13,18 @@ namespace LaBancaUCB.Core.Interfaces
 
         IBaseRepository<Beneficiario> BeneficiarioRepository { get; }
         IBaseRepository<Sesione> SesioneRepository { get; }
-        IBaseRepository<Solicitud> SolicitudRepository { get; }
-        IBaseRepository<Prestamo> PrestamoRepository { get; }
-        IBaseRepository<Administrador> AdministradorRepository { get; }
+
         IBaseRepository<Seguro> SeguroRepository { get; }
+        IBaseRepository<Tarjeta> TarjetaRepository { get; }
+        IBaseRepository<Prestamo> PrestamoRepository { get; }
+        IBaseRepository<Solicitud> SolicitudRepository { get; }
+
+        Task BeginTransactionAsync();
+        Task CommitAsync();
+        Task RollbackAsync();
+
+        IDbConnection GetConnection();
+        IDbTransaction? GetTransaction();
 
         void SaveChanges();
         Task SaveChangesAsync();

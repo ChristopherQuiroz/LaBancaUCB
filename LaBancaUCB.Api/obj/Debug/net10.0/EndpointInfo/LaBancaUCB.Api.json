@@ -85,22 +85,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/AdminManageSolicitudDto"
+                "$ref": "#/components/schemas/GestionarSolicitudDto"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AdminManageSolicitudDto"
+                "$ref": "#/components/schemas/GestionarSolicitudDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AdminManageSolicitudDto"
+                "$ref": "#/components/schemas/GestionarSolicitudDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AdminManageSolicitudDto"
+                "$ref": "#/components/schemas/GestionarSolicitudDto"
               }
             }
           },
@@ -288,6 +288,16 @@
       }
     },
     "/api/Beneficiarios": {
+      "get": {
+        "tags": [
+          "Beneficiarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Beneficiarios"
@@ -317,118 +327,6 @@
           },
           "required": true
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "get": {
-        "tags": [
-          "Beneficiarios"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Beneficiarios/{id}": {
-      "get": {
-        "tags": [
-          "Beneficiarios"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Beneficiarios"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/BeneficiarioDto"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BeneficiarioDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/BeneficiarioDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/BeneficiarioDto"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Beneficiarios"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -457,22 +355,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/PrestamoRequestDto"
+                "$ref": "#/components/schemas/CrearPrestamoDto"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/PrestamoRequestDto"
+                "$ref": "#/components/schemas/CrearPrestamoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/PrestamoRequestDto"
+                "$ref": "#/components/schemas/CrearPrestamoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/PrestamoRequestDto"
+                "$ref": "#/components/schemas/CrearPrestamoDto"
               }
             }
           },
@@ -494,139 +392,27 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
+                "$ref": "#/components/schemas/CrearSeguroDto"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
+                "$ref": "#/components/schemas/CrearSeguroDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
+                "$ref": "#/components/schemas/CrearSeguroDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
+                "$ref": "#/components/schemas/CrearSeguroDto"
               }
             }
           },
           "required": true
         },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "get": {
-        "tags": [
-          "Seguros"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Seguros/{id}": {
-      "get": {
-        "tags": [
-          "Seguros"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Seguros"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/SeguroDto"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Seguros"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -643,22 +429,22 @@
           "content": {
             "application/json-patch+json": {
               "schema": {
-                "$ref": "#/components/schemas/TarjetaRequestDto"
+                "$ref": "#/components/schemas/SolicitarTarjetaDto"
               }
             },
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarjetaRequestDto"
+                "$ref": "#/components/schemas/SolicitarTarjetaDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/TarjetaRequestDto"
+                "$ref": "#/components/schemas/SolicitarTarjetaDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/TarjetaRequestDto"
+                "$ref": "#/components/schemas/SolicitarTarjetaDto"
               }
             }
           },
@@ -671,37 +457,40 @@
         }
       }
     },
-    "/api/Solicitudes/{id}": {
-      "get": {
-        "tags": [
-          "Solicitudes"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Transaccion/history": {
       "get": {
         "tags": [
           "Transaccion"
+        ],
+        "parameters": [
+          {
+            "name": "Estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Tipo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Glosa",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Fecha",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -779,43 +568,6 @@
         "tags": [
           "Transacciones"
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Usuario/change-password": {
-      "post": {
-        "tags": [
-          "Usuario"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangePasswordDto"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangePasswordDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangePasswordDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ChangePasswordDto"
-              }
-            }
-          },
-          "required": true
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -971,33 +723,47 @@
           }
         }
       }
+    },
+    "/api/Usuario/change-password": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangePasswordDto"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
-      "AdminManageSolicitudDto": {
-        "type": "object",
-        "properties": {
-          "estado": {
-            "type": "string"
-          },
-          "observacionAdmin": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "montoAprobado": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "null",
-              "number",
-              "string"
-            ],
-            "format": "double"
-          }
-        }
-      },
       "AdminTransferActionDto": {
         "type": "object",
         "properties": {
@@ -1053,13 +819,19 @@
             "format": "int64"
           },
           "alias": {
-            "type": "string"
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "numeroCuentaDestino": {
             "type": "string"
           },
           "bancoDestino": {
-            "type": "string"
+            "type": [
+              "null",
+              "string"
+            ]
           },
           "nombreTitular": {
             "type": "string"
@@ -1078,26 +850,15 @@
       "ChangePasswordDto": {
         "type": "object",
         "properties": {
-          "currentPassword": {
+          "passwordActual": {
             "type": "string"
           },
-          "newPassword": {
+          "passwordNueva": {
             "type": "string"
           }
         }
       },
-      "LoginDto": {
-        "type": "object",
-        "properties": {
-          "email": {
-            "type": "string"
-          },
-          "password": {
-            "type": "string"
-          }
-        }
-      },
-      "PrestamoRequestDto": {
+      "CrearPrestamoDto": {
         "type": "object",
         "properties": {
           "idCuenta": {
@@ -1134,17 +895,9 @@
           }
         }
       },
-      "SeguroDto": {
+      "CrearSeguroDto": {
         "type": "object",
         "properties": {
-          "idSeguro": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int64"
-          },
           "idCuenta": {
             "pattern": "^-?(?:0|[1-9]\\d*)$",
             "type": [
@@ -1171,21 +924,35 @@
               "string"
             ],
             "format": "double"
-          },
-          "estado": {
-            "type": "string"
-          },
-          "fechaInicio": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "fechaFin": {
-            "type": "string",
-            "format": "date-time"
           }
         }
       },
-      "TarjetaRequestDto": {
+      "GestionarSolicitudDto": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string"
+          },
+          "observacionAdmin": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      },
+      "SolicitarTarjetaDto": {
         "type": "object",
         "properties": {
           "idCuenta": {

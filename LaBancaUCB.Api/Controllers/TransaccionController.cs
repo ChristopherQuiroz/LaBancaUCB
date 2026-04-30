@@ -25,7 +25,7 @@ public class TransaccionController : ControllerBase
     }
 
     [HttpGet("history")]
-    public async Task<ActionResult> GetHistorial()
+    public async Task<ActionResult> GetHistorial([FromQuery] TransaccionQueryFilter filters)
     {
         var idUsuarioClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (string.IsNullOrEmpty(idUsuarioClaim) || !long.TryParse(idUsuarioClaim, out long idUsuario))
@@ -33,7 +33,7 @@ public class TransaccionController : ControllerBase
             return Unauthorized(new { message = "Token inválido o usuario no identificado" });
         }
 
-        var transacciones = await _transaccionService.GetHistorialByUsuarioIdAsync(idUsuario);
+        var transacciones = await _transaccionService.GetHistorialByUsuarioIdAsync(idUsuario, filters);
         var transaccionesDto = _mapper.Map<IEnumerable<TransaccionDto>>(transacciones);
         var response = new ApiResponse<IEnumerable<TransaccionDto>>(transaccionesDto);
 

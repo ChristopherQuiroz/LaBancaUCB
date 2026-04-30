@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Core.Exceptions;
+using LaBancaUCB.Core.Helpers;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
-using LaBancaUCB.Core.DTOs;
-using LaBancaUCB.Core.Exceptions;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -20,7 +21,7 @@ public class TransaccionService : ITransaccionService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario)
+    public async Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario, TransaccionQueryFilter? filters = null)
     {
         var todasCuentas = await _unitOfWork.CuentaRepository.GetAllAsync();
         var cuentasUsuario = todasCuentas.Where(c => c.IdUsuario == idUsuario).ToList();
@@ -30,31 +31,68 @@ public class TransaccionService : ITransaccionService
 
         var todasTransacciones = await _unitOfWork.TransaccionRepository.GetAllAsync();
 
-        var historial = todasTransacciones.Where(t =>
+        var query = todasTransacciones.Where(t =>
             idsCuentas.Contains(t.IdCuentaOrigen) ||
             numerosCuentas.Contains(t.IdCuentaDestino)
-        ).OrderByDescending(t => t.FechaHora);
+        );
 
-        return historial;
+        if (filters != null)
+        {
+            if (!string.IsNullOrWhiteSpace(filters.Estado))
+            {
+                query = query.Where(x => x.Estado.ToLower() == filters.Estado.ToLower());
+            }
+
+            if (!string.IsNullOrWhiteSpace(filters.Tipo))
+            {
+                query = query.Where(x => x.Tipo.ToLower() == filters.Tipo.ToLower());
+            }
+
+            if (!string.IsNullOrWhiteSpace(filters.Glosa))
+            {
+                query = query.Where(x => x.Glosa != null && x.Glosa.ToLower().Contains(filters.Glosa.ToLower()));
+            }
+
+            if (!string.IsNullOrWhiteSpace(filters.Fecha))
+            {
+                var fechaLimpia = Procesos.ParseFechaFlexible(filters.Fecha);
+                if (fechaLimpia != null)
+                {
+                    var fechaFiltro = DateTime.ParseExact(fechaLimpia, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+
+                    query = query.Where(x => x.FechaHora.Date == fechaFiltro.Date);
+                }
+            }
+        }
+
+        return query.OrderByDescending(t => t.FechaHora);
     }
 
     public async Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId)
     {
         var cantidadPendientes = await _unitOfWork.TransaccionRepository.GetCantidadPendientesAsync(usuarioId);
+
         if (cantidadPendientes >= 3)
         {
             throw new BusinessException("Seguridad: No puedes tener más de 3 transferencias pendientes de aprobación.", HttpStatusCode.BadRequest);
         }
 
         var cuenta = await _unitOfWork.CuentaRepository.GetByIdAsync(dto.CuentaOrigenId);
+
         if (cuenta == null)
+        {
             throw new BusinessException("Cuenta origen no encontrada en el sistema.", HttpStatusCode.NotFound);
+        }
 
         if (cuenta.IdUsuario != usuarioId)
+        {
             throw new BusinessException("Acceso denegado: La cuenta no te pertenece.", HttpStatusCode.Forbidden);
+        }
 
         if (cuenta.Saldo < dto.Monto)
+        {
             throw new BusinessException("Saldo insuficiente para realizar esta transferencia.", HttpStatusCode.BadRequest);
+        }
 
         cuenta.Saldo -= dto.Monto;
         _unitOfWork.CuentaRepository.Update(cuenta);
@@ -82,8 +120,11 @@ public class TransaccionService : ITransaccionService
     public async Task<IEnumerable<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado = null)
     {
         var todas = await _unitOfWork.TransaccionRepository.GetAllAsync();
+
         if (string.IsNullOrWhiteSpace(estado))
+        {
             return todas.OrderByDescending(t => t.FechaHora);
+        }
 
         return todas.Where(t => t.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase))
                     .OrderByDescending(t => t.FechaHora);
@@ -92,11 +133,16 @@ public class TransaccionService : ITransaccionService
     public async Task AprobarTransferenciaAsync(long transaccionId, long adminId)
     {
         var trans = await _unitOfWork.TransaccionRepository.GetByIdAsync(transaccionId);
+
         if (trans == null)
+        {
             throw new BusinessException("Transacción no encontrada.", HttpStatusCode.NotFound);
+        }
 
         if (!trans.Estado.Equals("pendiente", StringComparison.OrdinalIgnoreCase))
+        {
             throw new BusinessException("Solo se pueden aprobar transacciones que estén en estado 'pendiente'.", HttpStatusCode.BadRequest);
+        }
 
         trans.Estado = "completada";
         trans.FechaHora = DateTime.UtcNow;
@@ -108,11 +154,16 @@ public class TransaccionService : ITransaccionService
     public async Task RechazarTransferenciaAsync(long transaccionId, string motivo, long adminId)
     {
         var trans = await _unitOfWork.TransaccionRepository.GetByIdAsync(transaccionId);
+
         if (trans == null)
+        {
             throw new BusinessException("Transacción no encontrada.", HttpStatusCode.NotFound);
+        }
 
         if (!trans.Estado.Equals("pendiente", StringComparison.OrdinalIgnoreCase))
+        {
             throw new BusinessException("Solo se pueden rechazar transacciones que estén en estado 'pendiente'.", HttpStatusCode.BadRequest);
+        }
 
         var cuenta = await _unitOfWork.CuentaRepository.GetByIdAsync(trans.IdCuentaOrigen);
         if (cuenta != null)

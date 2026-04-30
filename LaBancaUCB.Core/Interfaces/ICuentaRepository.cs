@@ -9,4 +9,5 @@ public interface ICuentaRepository
     Task InsertCuentaAsync(Cuenta cuenta);
     Task UpdateCuentaAsync(Cuenta cuenta);
     Task DeleteCuentaAsync(Cuenta cuenta);
+    Task<decimal> GetSumaSaldosDapperAsync(long idUsuario);
 }

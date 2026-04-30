@@ -8,7 +8,7 @@ namespace LaBancaUCB.Services.Interfaces;
 
 public interface ITransaccionService
 {
-    Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario);
+    Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario, TransaccionQueryFilter? filters = null);
 
     Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId);
 

@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
 using FluentValidation; 
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
 using LaBancaUCB.Api.Response;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Services.Interfaces;
 using LaBancaUCB.Services.Validators;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace LaBancaUCB.Api.Controllers;
@@ -21,34 +21,17 @@ public class UsuarioController : ControllerBase
     private readonly IMapper _mapper;
     private readonly CrearUsuarioValidator _crearValidator;
     private readonly ActualizarUsuarioValidator _actualizarValidator;
-    private readonly ChangePasswordDtoValidator _changePasswordValidator;
 
     public UsuarioController(
         IUsuarioService usuarioService,
         IMapper mapper,
         CrearUsuarioValidator crearValidator,
-        ActualizarUsuarioValidator actualizarValidator,
-        ChangePasswordDtoValidator changePasswordValidator)
+        ActualizarUsuarioValidator actualizarValidator)
     {
         _usuarioService = usuarioService;
         _mapper = mapper;
         _crearValidator = crearValidator;
         _actualizarValidator = actualizarValidator;
-        _changePasswordValidator = changePasswordValidator;
-    }
-
-    [HttpPost("change-password")]
-    [Authorize(Roles = "cliente")]
-    public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
-    {
-        await _changePasswordValidator.ValidateAndThrowAsync(dto);
-
-        var claim = User.FindFirst(ClaimTypes.NameIdentifier);
-        if (claim == null) return Unauthorized();
-        var usuarioId = long.Parse(claim.Value);
-
-        await _usuarioService.ChangePasswordAsync(usuarioId, dto.CurrentPassword, dto.NewPassword);
-        return NoContent();
     }
 
     [HttpGet]
@@ -107,5 +90,16 @@ public class UsuarioController : ControllerBase
     {
         await _usuarioService.DeleteUsuarioAsync(id);
         return NoContent();
+    }
+
+    [HttpPost("change-password")]
+    [Authorize] 
+    public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+    {
+        var idUsuario = long.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
+        await _usuarioService.ChangePasswordAsync(idUsuario, dto);
+
+        return Ok(new { Message = "Contraseña actualizada correctamente" });
     }
 }

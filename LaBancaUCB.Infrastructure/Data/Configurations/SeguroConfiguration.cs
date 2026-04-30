@@ -1,3 +1,6 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using LaBancaUCB.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
@@ -21,11 +24,6 @@ public class SeguroConfiguration : IEntityTypeConfiguration<Seguro>
         builder.Property(s => s.FechaInicio).HasColumnName("fecha_inicio");
         builder.Property(s => s.FechaFin).HasColumnName("fecha_fin");
 
-        // Configure relationship explicitly so EF uses the existing FK column 'id_cuenta'
-        builder.HasOne(s => s.IdCuentaNavigation)
-               .WithMany(c => c.Seguros)
-               .HasForeignKey(s => s.IdCuenta)
-               .HasConstraintName("FK_Seguros_Cuenta")
-               .OnDelete(DeleteBehavior.Cascade);
+        builder.HasOne(s => s.IdCuentaNavigation).WithMany().HasForeignKey(s => s.IdCuenta);
     }
 }

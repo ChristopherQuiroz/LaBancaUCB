@@ -1,11 +1,12 @@
-﻿using System;
+﻿using LaBancaUCB.Core.DTOs;
+using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Core.Exceptions;
+using LaBancaUCB.Core.Interfaces;
+using LaBancaUCB.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using LaBancaUCB.Core.Entities;
-using LaBancaUCB.Core.Interfaces;
-using LaBancaUCB.Services.Interfaces;
-using LaBancaUCB.Core.Exceptions;
 
 namespace LaBancaUCB.Services.Services;
 public class UsuarioService : IUsuarioService
@@ -56,21 +57,6 @@ public class UsuarioService : IUsuarioService
         await _unitOfWork.SaveChangesAsync();
     }
 
-    public async Task ChangePasswordAsync(long usuarioId, string currentPassword, string newPassword)
-    {
-        var usuario = await _unitOfWork.UsuarioRepository.GetByIdAsync(usuarioId);
-        if (usuario == null)
-            throw new BusinessException("Usuario no encontrado.", HttpStatusCode.NotFound);
-
-        // En este proyecto la contraseña se almacena en PasswordHash sin hashing
-        if (usuario.PasswordHash != currentPassword)
-            throw new BusinessException("La contraseña actual es incorrecta.", HttpStatusCode.BadRequest);
-
-        usuario.PasswordHash = newPassword;
-        _unitOfWork.UsuarioRepository.Update(usuario);
-        await _unitOfWork.SaveChangesAsync();
-    }
-
     private readonly string[] _palabrasNoPermitidas =
     {
         "violencia", "odio", "maricon", "pornografia", "pete"
@@ -86,5 +72,22 @@ public class UsuarioService : IUsuarioService
                 return true;
         }
         return false;
+    }
+
+    public async Task ChangePasswordAsync(long idUsuario, ChangePasswordDto dto)
+    {
+        var usuario = await _unitOfWork.UsuarioRepository.GetByIdAsync(idUsuario);
+        if (usuario == null)
+            throw new BusinessException("Usuario no encontrado.", HttpStatusCode.NotFound);
+
+        if (usuario.PasswordHash != dto.PasswordActual)
+            throw new BusinessException("La contraseña actual es incorrecta.", HttpStatusCode.BadRequest);
+
+        if (dto.PasswordActual == dto.PasswordNueva)
+            throw new BusinessException("La nueva contraseña no puede ser igual a la anterior.", HttpStatusCode.BadRequest);
+
+        usuario.PasswordHash = dto.PasswordNueva;
+        _unitOfWork.UsuarioRepository.Update(usuario);
+        await _unitOfWork.SaveChangesAsync();
     }
 }

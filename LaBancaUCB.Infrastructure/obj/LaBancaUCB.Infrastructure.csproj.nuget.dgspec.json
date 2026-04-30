@@ -397,6 +397,10 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.72, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -410,6 +414,10 @@
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

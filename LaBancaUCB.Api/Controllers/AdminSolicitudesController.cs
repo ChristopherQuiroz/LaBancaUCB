@@ -1,87 +1,43 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Linq;
-using System;
-using LaBancaUCB.Services.Interfaces;
 using LaBancaUCB.Core.DTOs;
-using LaBancaUCB.Core.Entities;
-using LaBancaUCB.Core.Interfaces;
+using LaBancaUCB.Services.Interfaces;
 
 namespace LaBancaUCB.Api.Controllers;
 
 [ApiController]
-[Route("api/admin/solicitudes")]
-[Authorize(Roles = "admin")]
+[Route("api/admin/solicitudes")] 
+[Authorize(Roles = "admin")]     
 public class AdminSolicitudesController : ControllerBase
 {
-    private readonly ISolicitudService _solicitudService;
-    private readonly IPrestamoService _prestamoService;
-    private readonly IUnitOfWork _unitOfWork;
+    private readonly IAdminSolicitudesService _adminService;
 
-    public AdminSolicitudesController(ISolicitudService solicitudService, IPrestamoService prestamoService, IUnitOfWork unitOfWork)
+    public AdminSolicitudesController(IAdminSolicitudesService adminService)
     {
-        _solicitudService = solicitudService;
-        _prestamoService = prestamoService;
-        _unitOfWork = unitOfWork;
+        _adminService = adminService;
     }
 
     [HttpGet]
     public async Task<IActionResult> Listar([FromQuery] string? estado)
     {
-        var todas = await _solicitudService.GetAllSolicitudesAsync();
-        var filtradas = string.IsNullOrWhiteSpace(estado) ? todas : todas.Where(s => s.Estado == estado);
-        return Ok(filtradas);
+        var lista = await _adminService.GetSolicitudesAsync(estado);
+        return Ok(lista);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> Obtener(long id)
     {
-        var s = await _solicitudService.GetSolicitudByIdAsync(id);
-        if (s == null) return NotFound();
-        return Ok(s);
+        var solicitud = await _adminService.GetSolicitudByIdAsync(id);
+        if (solicitud == null) return NotFound(new { message = "Solicitud no encontrada" });
+
+        return Ok(solicitud);
     }
 
     [HttpPut("{id}/manage")]
-    public async Task<IActionResult> Gestionar(long id, [FromBody] AdminManageSolicitudDto dto)
+    public async Task<IActionResult> Gestionar(long id, [FromBody] GestionarSolicitudDto dto)
     {
-        try
-        {
-            var solicitud = await _solicitudService.GetSolicitudByIdAsync(id);
-            if (solicitud == null) return NotFound();
-
-            var claim = User.FindFirst(ClaimTypes.NameIdentifier);
-            if (claim == null) return Unauthorized();
-            var usuarioId = long.Parse(claim.Value);
-
-            // encontrar registro de administrador para este usuario
-            var administradores = await _unitOfWork.AdministradorRepository.GetAllAsync();
-            var admin = administradores.FirstOrDefault(a => a.IdUsuario == usuarioId);
-            solicitud.IdAdmin = admin?.IdAdministrador;
-            solicitud.ObservacionAdmin = dto.ObservacionAdmin;
-            solicitud.Estado = dto.Estado;
-            solicitud.GestionadaEn = DateTime.UtcNow;
-
-            // si es prestamo y se aprueba, actualizar prestamo
-            if (solicitud.TipoSolicitud == "prestamo" && dto.MontoAprobado.HasValue && dto.Estado == "aprobada")
-            {
-                var prestamo = await _prestamoService.GetPrestamoByIdAsync(solicitud.referenciaID);
-                if (prestamo != null)
-                {
-                    prestamo.MontoAprobado = dto.MontoAprobado.Value;
-                    prestamo.estado = "aprobado";
-                    prestamo.aprobadoEn = DateTime.UtcNow;
-                    await _prestamoService.UpdatePrestamoAsync(prestamo);
-                }
-            }
-
-            await _solicitudService.UpdateSolicitudAsync(solicitud);
-            return Ok(solicitud);
-        }
-        catch (System.Exception ex)
-        {
-            return BadRequest(new { error = ex.Message, detail = ex.InnerException?.Message });
-        }
+        await _adminService.GestionarSolicitudAsync(id, dto);
+        return Ok(new { message = $"La solicitud fue {dto.Estado} exitosamente." });
     }
 }

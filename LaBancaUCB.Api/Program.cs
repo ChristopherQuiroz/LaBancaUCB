@@ -22,11 +22,10 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ICuentaService, CuentaService>();
 builder.Services.AddScoped<ITransaccionService, TransaccionService>();
 builder.Services.AddScoped<IBeneficiarioService, BeneficiarioService>();
-builder.Services.AddScoped<ISeguroService, SeguroService>();
-builder.Services.AddScoped<ISolicitudService, SolicitudService>();
-builder.Services.AddScoped<IPrestamoService, PrestamoService>();
-builder.Services.AddScoped<ISolicitudService, SolicitudService>();
-builder.Services.AddScoped<IPrestamoService, PrestamoService>();
+builder.Services.AddScoped<IProductosService, ProductosService>();
+builder.Services.AddScoped<IAdminSolicitudesService, AdminSolicitudesService>();
+builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
+builder.Services.AddScoped<IDapperContext, DapperContext>();
 
 builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
 
@@ -34,7 +33,8 @@ builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<UsuarioDtoValidator>();
 builder.Services.AddScoped<CrearUsuarioValidator>();
 builder.Services.AddScoped<ActualizarUsuarioValidator>();
-builder.Services.AddScoped<LoginDtoValidator>(); 
+builder.Services.AddScoped<LoginDtoValidator>();
+builder.Services.AddScoped<CrearBeneficiarioValidator>();
 
 builder.Services.AddControllers()
     .AddNewtonsoftJson(options =>
