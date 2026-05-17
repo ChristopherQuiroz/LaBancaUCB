@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.DTOs;
@@ -12,11 +10,9 @@ public interface ITransaccionService
 {
     Task<PagedList<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario, TransaccionQueryFilter? filters = null);
 
+    Task<PagedList<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado, PaginationFilter filters);
+
     Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId);
-
-    Task<IEnumerable<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado = null);
-
     Task AprobarTransferenciaAsync(long transaccionId, long adminId);
-
     Task RechazarTransferenciaAsync(long transaccionId, string motivo, long adminId);
 }

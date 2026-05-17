@@ -1,8 +1,10 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -15,9 +17,13 @@ public class SolicitudService : ISolicitudService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Solicitud>> GetAllSolicitudesAsync()
+    public async Task<PagedList<Solicitud>> GetAllSolicitudesAsync(PaginationFilter filters)
     {
-        return await _unitOfWork.SolicitudRepository.GetAllAsync();
+        var todos = await _unitOfWork.SolicitudRepository.GetAllAsync();
+
+        var ordenados = todos.OrderByDescending(s => s.FechaCreacion);
+
+        return PagedList<Solicitud>.Create(ordenados, filters.PageNumber, filters.PageSize);
     }
 
     public async Task<Solicitud?> GetSolicitudByIdAsync(long id)

@@ -33,14 +33,30 @@ public class TransaccionesController : ControllerBase
 
     [HttpGet("history")]
     [Authorize(Roles = "cliente")]
-    public async Task<IActionResult> GetHistorial()
+    public async Task<IActionResult> GetHistorial([FromQuery] TransaccionQueryFilter filters)
     {
         var claim = User.FindFirst(ClaimTypes.NameIdentifier);
         if (claim == null) return Unauthorized();
 
         var usuarioId = long.Parse(claim.Value);
-        var historial = await _transaccionService.GetHistorialByUsuarioIdAsync(usuarioId);
 
-        return Ok(historial);
+        var pagedTransacciones = await _transaccionService.GetHistorialByUsuarioIdAsync(usuarioId, filters);
+
+        var response = new Api.Response.ApiResponse<object>(pagedTransacciones)
+        {
+            Meta = new Core.CustomEntities.Metadata
+            {
+                TotalCount = pagedTransacciones.TotalCount,
+                PageSize = pagedTransacciones.PageSize,
+                CurrentPage = pagedTransacciones.CurrentPage,
+                TotalPages = pagedTransacciones.TotalPages,
+                HasNextPage = pagedTransacciones.HasNextPage,
+                HasPreviousPage = pagedTransacciones.HasPreviousPage,
+                NextPageNumber = pagedTransacciones.NextPageNumber,
+                PreviousPageNumber = pagedTransacciones.PreviousPageNumber
+            }
+        };
+
+        return Ok(response);
     }
 }

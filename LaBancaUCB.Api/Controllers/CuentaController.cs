@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using AutoMapper;
+﻿using AutoMapper;
 using LaBancaUCB.Api.Response;
+using LaBancaUCB.Core.CustomEntities;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace LaBancaUCB.Api.Controllers;
 
@@ -25,7 +26,7 @@ public class CuentaController : ControllerBase
     }
 
     [HttpGet("mis-cuentas")]
-    public async Task<ActionResult> GetMisCuentas()
+    public async Task<ActionResult> GetMisCuentas([FromQuery] PaginationFilter filters)
     {
         var idUsuarioClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (string.IsNullOrEmpty(idUsuarioClaim) || !long.TryParse(idUsuarioClaim, out long idUsuario))
@@ -33,9 +34,23 @@ public class CuentaController : ControllerBase
             return Unauthorized(new { message = "Token inválido o usuario no identificado" });
         }
 
-        var cuentas = await _cuentaService.GetCuentasByUsuarioIdAsync(idUsuario);
-        var cuentasDto = _mapper.Map<IEnumerable<CuentaDto>>(cuentas);
-        var response = new ApiResponse<IEnumerable<CuentaDto>>(cuentasDto);
+        var pagedCuentas = await _cuentaService.GetCuentasByUsuarioIdAsync(idUsuario, filters);
+        var cuentasDto = _mapper.Map<IEnumerable<CuentaDto>>(pagedCuentas);
+
+        var response = new Api.Response.ApiResponse<IEnumerable<CuentaDto>>(cuentasDto)
+        {
+            Meta = new Metadata
+            {
+                TotalCount = pagedCuentas.TotalCount,
+                PageSize = pagedCuentas.PageSize,
+                CurrentPage = pagedCuentas.CurrentPage,
+                TotalPages = pagedCuentas.TotalPages,
+                HasNextPage = pagedCuentas.HasNextPage,
+                HasPreviousPage = pagedCuentas.HasPreviousPage,
+                NextPageNumber = pagedCuentas.NextPageNumber,
+                PreviousPageNumber = pagedCuentas.PreviousPageNumber
+            }
+        };
 
         return Ok(response);
     }

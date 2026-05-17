@@ -26,33 +26,25 @@ public class TransaccionService : ITransaccionService
     {
         var todasCuentas = await _unitOfWork.CuentaRepository.GetAllAsync();
         var cuentasUsuario = todasCuentas.Where(c => c.IdUsuario == idUsuario).ToList();
-
         var idsCuentas = cuentasUsuario.Select(c => c.IdCuenta).ToList();
         var numerosCuentas = cuentasUsuario.Select(c => c.NumeroCuenta).ToList();
 
         var todasTransacciones = await _unitOfWork.TransaccionRepository.GetAllAsync();
-
         var query = todasTransacciones.Where(t =>
             idsCuentas.Contains(t.IdCuentaOrigen) ||
             numerosCuentas.Contains(t.IdCuentaDestino)
-        );
+        ).AsQueryable();
 
         if (filters != null)
         {
             if (!string.IsNullOrWhiteSpace(filters.Estado))
-            {
                 query = query.Where(x => x.Estado.ToLower() == filters.Estado.ToLower());
-            }
 
             if (!string.IsNullOrWhiteSpace(filters.Tipo))
-            {
                 query = query.Where(x => x.Tipo.ToLower() == filters.Tipo.ToLower());
-            }
 
             if (!string.IsNullOrWhiteSpace(filters.Glosa))
-            {
                 query = query.Where(x => x.Glosa != null && x.Glosa.ToLower().Contains(filters.Glosa.ToLower()));
-            }
 
             if (!string.IsNullOrWhiteSpace(filters.Fecha))
             {
@@ -65,14 +57,8 @@ public class TransaccionService : ITransaccionService
             }
         }
 
-        var transaccionesOrdenadas = query.OrderByDescending(t => t.FechaHora);
-
-        int pageNumber = filters?.PageNumber ?? 1;
-        int pageSize = filters?.PageSize ?? 10;
-
-        var pagedTransacciones = PagedList<Transaccion>.Create(transaccionesOrdenadas, pageNumber, pageSize);
-
-        return pagedTransacciones;
+        var ordenadas = query.OrderByDescending(t => t.FechaHora);
+        return PagedList<Transaccion>.Create(ordenadas, filters?.PageNumber ?? 1, filters?.PageSize ?? 10);
     }
 
     public async Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId)
@@ -124,17 +110,18 @@ public class TransaccionService : ITransaccionService
         return transaccion;
     }
 
-    public async Task<IEnumerable<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado = null)
+    public async Task<PagedList<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado, PaginationFilter filters)
     {
         var todas = await _unitOfWork.TransaccionRepository.GetAllAsync();
+        var query = todas.AsQueryable();
 
-        if (string.IsNullOrWhiteSpace(estado))
+        if (!string.IsNullOrWhiteSpace(estado))
         {
-            return todas.OrderByDescending(t => t.FechaHora);
+            query = query.Where(t => t.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase));
         }
 
-        return todas.Where(t => t.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase))
-                    .OrderByDescending(t => t.FechaHora);
+        var ordenadas = query.OrderByDescending(t => t.FechaHora);
+        return PagedList<Transaccion>.Create(ordenadas, filters.PageNumber, filters.PageSize);
     }
 
     public async Task AprobarTransferenciaAsync(long transaccionId, long adminId)

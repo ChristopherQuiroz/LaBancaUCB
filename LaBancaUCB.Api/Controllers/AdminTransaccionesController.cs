@@ -1,9 +1,10 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
-using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Api.Response;
+using LaBancaUCB.Core.CustomEntities;
 using LaBancaUCB.Core.DTOs;
-using System.Threading.Tasks;
+using LaBancaUCB.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace LaBancaUCB.Api.Controllers;
 
@@ -20,10 +21,26 @@ public class TransaccionesAdminController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> Listar([FromQuery] string? estado)
+    public async Task<IActionResult> Listar([FromQuery] string? estado, [FromQuery] PaginationFilter filters)
     {
-        var lista = await _transaccionService.ListarTransferenciasPorEstadoAsync(estado);
-        return Ok(lista);
+        var pagedTransacciones = await _transaccionService.ListarTransferenciasPorEstadoAsync(estado, filters);
+
+        var response = new ApiResponse<object>(pagedTransacciones)
+        {
+            Meta = new Metadata
+            {
+                TotalCount = pagedTransacciones.TotalCount,
+                PageSize = pagedTransacciones.PageSize,
+                CurrentPage = pagedTransacciones.CurrentPage,
+                TotalPages = pagedTransacciones.TotalPages,
+                HasNextPage = pagedTransacciones.HasNextPage,
+                HasPreviousPage = pagedTransacciones.HasPreviousPage,
+                NextPageNumber = pagedTransacciones.NextPageNumber,
+                PreviousPageNumber = pagedTransacciones.PreviousPageNumber
+            }
+        };
+
+        return Ok(response);
     }
 
     [HttpPost("{id}/aprobar")]

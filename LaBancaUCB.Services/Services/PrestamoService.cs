@@ -1,8 +1,10 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -15,9 +17,11 @@ public class PrestamoService : IPrestamoService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Prestamo>> GetAllPrestamosAsync()
+    public async Task<PagedList<Prestamo>> GetAllPrestamosAsync(PaginationFilter filters)
     {
-        return await _unitOfWork.PrestamoRepository.GetAllAsync();
+        var todos = await _unitOfWork.PrestamoRepository.GetAllAsync();
+        var ordenados = todos.OrderByDescending(p => p.SolicitadoEn);
+        return PagedList<Prestamo>.Create(ordenados, filters.PageNumber, filters.PageSize);
     }
 
     public async Task<Prestamo?> GetPrestamoByIdAsync(long id)

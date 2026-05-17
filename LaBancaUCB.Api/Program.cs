@@ -26,9 +26,7 @@ builder.Services.AddScoped<IProductosService, ProductosService>();
 builder.Services.AddScoped<IAdminSolicitudesService, AdminSolicitudesService>();
 builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
 builder.Services.AddScoped<IDapperContext, DapperContext>();
-
 builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
-
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<UsuarioDtoValidator>();
 builder.Services.AddScoped<CrearUsuarioValidator>();
@@ -43,7 +41,16 @@ builder.Services.AddControllers()
             Newtonsoft.Json.ReferenceLoopHandling.Ignore;
     });
 
-builder.Services.AddOpenApi();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new()
+    {
+        Title = "LaBancaUCB API",
+        Version = "v1",
+        Description = "Backend LaBancaUCB"
+    });
+});
 
 builder.Services.AddDbContext<LaBancaUCBContext>(options =>
     options.UseMySql(
@@ -52,36 +59,40 @@ builder.Services.AddDbContext<LaBancaUCBContext>(options =>
     )
 );
 
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
     {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
-        };
-    });
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Authentication:Issuer"],
+        ValidAudience = builder.Configuration["Authentication:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Authentication:SecretKey"]!))
+    };
+});
 
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
 app.UseMiddleware<LaBancaUCB.Api.Filters.ExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LaBancaUCB API v1"));
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
-
+app.UseAuthentication(); 
+app.UseAuthorization();  
 app.MapControllers();
 
 app.Run();

@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading.Tasks;
 using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Core.DTOs;
 
 namespace LaBancaUCB.Services.Interfaces;
 
 public interface ICuentaService
 {
-    Task<IEnumerable<Cuenta>> GetCuentasByUsuarioIdAsync(long idUsuario);
+    Task<PagedList<Cuenta>> GetCuentasByUsuarioIdAsync(long idUsuario, PaginationFilter filters);
 }

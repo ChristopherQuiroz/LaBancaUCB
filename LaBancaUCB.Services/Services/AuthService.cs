@@ -18,7 +18,7 @@ public class AuthService : IAuthService
 
     public AuthService(
         IBaseRepository<Usuario> usuarioRepository,
-        IBaseRepository<Sesione> sesioneRepository, 
+        IBaseRepository<Sesione> sesioneRepository,
         IConfiguration configuration)
     {
         _usuarioRepository = usuarioRepository;
@@ -45,7 +45,7 @@ public class AuthService : IAuthService
             throw new Exception("Credenciales incorrectas");
 
         var jti = Guid.NewGuid();
-        var expiracion = DateTime.UtcNow.AddHours(8);
+        var expiracion = DateTime.UtcNow.AddMinutes(15);
 
         var token = GenerarToken(usuario, jti, expiracion);
 
@@ -53,7 +53,7 @@ public class AuthService : IAuthService
         {
             IdUsuario = usuario.IdUsuario,
             TokenJti = jti,
-            IpOrigen = "Desconocida", 
+            IpOrigen = "Desconocida",
             Activo = true,
             ExpiradoEn = expiracion,
             CreadoEn = DateTime.UtcNow
@@ -73,29 +73,33 @@ public class AuthService : IAuthService
 
     private string GenerarToken(Usuario usuario, Guid jti, DateTime expiracion)
     {
-        var jwtKey = _configuration["Jwt:Key"]!;
-        var jwtIssuer = _configuration["Jwt:Issuer"]!;
-        var jwtAudience = _configuration["Jwt:Audience"]!;
+        var jwtKey = _configuration["Authentication:SecretKey"]!;
+        var jwtIssuer = _configuration["Authentication:Issuer"]!;
+        var jwtAudience = _configuration["Authentication:Audience"]!;
+
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
+        var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+        var header = new JwtHeader(credentials);
 
         var claims = new[]
         {
-            new Claim(JwtRegisteredClaimNames.Jti, jti.ToString()), 
+            new Claim(JwtRegisteredClaimNames.Jti, jti.ToString()),
             new Claim(ClaimTypes.NameIdentifier, usuario.IdUsuario.ToString()),
             new Claim(ClaimTypes.Email, usuario.Email),
             new Claim(ClaimTypes.Name, usuario.NombreCompleto),
             new Claim(ClaimTypes.Role, usuario.Rol)
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
-        var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-        var token = new JwtSecurityToken(
+        var payload = new JwtPayload(
             issuer: jwtIssuer,
             audience: jwtAudience,
             claims: claims,
-            expires: expiracion,
-            signingCredentials: credentials
+            notBefore: DateTime.UtcNow, 
+            expires: expiracion
         );
+
+        var token = new JwtSecurityToken(header, payload);
 
         return new JwtSecurityTokenHandler().WriteToken(token);
     }
