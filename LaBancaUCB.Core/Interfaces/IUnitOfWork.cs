@@ -19,6 +19,8 @@ namespace LaBancaUCB.Core.Interfaces
         IBaseRepository<Prestamo> PrestamoRepository { get; }
         IBaseRepository<Solicitud> SolicitudRepository { get; }
 
+        ISecurityRepository SecurityRepository { get; }
+
         Task BeginTransactionAsync();
         Task CommitAsync();
         Task RollbackAsync();

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
+﻿using System.Net;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Exceptions;
 using LaBancaUCB.Core.Helpers;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Core.CustomEntities;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -21,7 +18,7 @@ public class TransaccionService : ITransaccionService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario, TransaccionQueryFilter? filters = null)
+    public async Task<PagedList<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario, TransaccionQueryFilter? filters = null)
     {
         var todasCuentas = await _unitOfWork.CuentaRepository.GetAllAsync();
         var cuentasUsuario = todasCuentas.Where(c => c.IdUsuario == idUsuario).ToList();
@@ -59,13 +56,19 @@ public class TransaccionService : ITransaccionService
                 if (fechaLimpia != null)
                 {
                     var fechaFiltro = DateTime.ParseExact(fechaLimpia, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
-
                     query = query.Where(x => x.FechaHora.Date == fechaFiltro.Date);
                 }
             }
         }
 
-        return query.OrderByDescending(t => t.FechaHora);
+        var transaccionesOrdenadas = query.OrderByDescending(t => t.FechaHora);
+
+        int pageNumber = filters?.PageNumber ?? 1;
+        int pageSize = filters?.PageSize ?? 10;
+
+        var pagedTransacciones = PagedList<Transaccion>.Create(transaccionesOrdenadas, pageNumber, pageSize);
+
+        return pagedTransacciones;
     }
 
     public async Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId)

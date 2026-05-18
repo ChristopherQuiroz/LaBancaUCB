@@ -7,10 +7,10 @@ public class ChangePasswordDtoValidator : AbstractValidator<ChangePasswordDto>
 {
     public ChangePasswordDtoValidator()
     {
-        RuleFor(x => x.CurrentPassword)
+        RuleFor(x => x.PasswordActual)
             .NotEmpty().WithMessage("La contraseña actual es requerida");
 
-        RuleFor(x => x.NewPassword)
+        RuleFor(x => x.PasswordNueva)
             .NotEmpty().WithMessage("La nueva contraseña es requerida")
             .MinimumLength(6).WithMessage("La nueva contraseña debe tener al menos 6 caracteres");
     }

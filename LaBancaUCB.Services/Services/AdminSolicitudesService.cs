@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
+﻿using System.Net;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Exceptions;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Core.CustomEntities;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -20,15 +17,21 @@ public class AdminSolicitudesService : IAdminSolicitudesService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Solicitud>> GetSolicitudesAsync(string? estado)
+    public async Task<PagedList<Solicitud>> GetSolicitudesAsync(SolicitudQueryFilter filters)
     {
         var todas = await _unitOfWork.SolicitudRepository.GetAllAsync();
+        var query = todas.AsQueryable();
 
-        if (string.IsNullOrWhiteSpace(estado))
-            return todas.OrderByDescending(s => s.FechaCreacion);
+        if (!string.IsNullOrWhiteSpace(filters.Estado))
+        {
+            query = query.Where(s => s.Estado.Equals(filters.Estado, StringComparison.OrdinalIgnoreCase));
+        }
 
-        return todas.Where(s => s.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase))
-                    .OrderByDescending(s => s.FechaCreacion);
+        var solicitudesOrdenadas = query.OrderByDescending(s => s.FechaCreacion);
+
+        var pagedSolicitudes = PagedList<Solicitud>.Create(solicitudesOrdenadas, filters.PageNumber, filters.PageSize);
+
+        return pagedSolicitudes;
     }
 
     public async Task<Solicitud?> GetSolicitudByIdAsync(long id)

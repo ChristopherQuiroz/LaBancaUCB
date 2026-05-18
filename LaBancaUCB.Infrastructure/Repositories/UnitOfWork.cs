@@ -24,6 +24,7 @@ namespace LaBancaUCB.Infrastructure.Repositories
         private IBaseRepository<Tarjeta>? _tarjetaRepository;
         private IBaseRepository<Prestamo>? _prestamoRepository;
         private IBaseRepository<Solicitud>? _solicitudRepository;
+        private ISecurityRepository _securityRepository;
 
         public UnitOfWork(LaBancaUCBContext context, IDapperContext dapper)
         {
@@ -86,7 +87,7 @@ namespace LaBancaUCB.Infrastructure.Repositories
         public IBaseRepository<Tarjeta> TarjetaRepository => _tarjetaRepository ??= new BaseRepository<Tarjeta>(_context);
         public IBaseRepository<Prestamo> PrestamoRepository => _prestamoRepository ??= new BaseRepository<Prestamo>(_context);
         public IBaseRepository<Solicitud> SolicitudRepository => _solicitudRepository ??= new BaseRepository<Solicitud>(_context);
-
+        public ISecurityRepository SecurityRepository => _securityRepository ??= new SecurityRepository(_context);
         public void Dispose()
         {
             if (_context != null)

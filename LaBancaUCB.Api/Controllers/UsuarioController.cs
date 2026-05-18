@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FluentValidation; 
 using LaBancaUCB.Api.Response;
+using LaBancaUCB.Core.CustomEntities;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Services.Interfaces;
@@ -34,15 +35,30 @@ public class UsuarioController : ControllerBase
         _actualizarValidator = actualizarValidator;
     }
 
+    [Authorize(Roles = "admin")]
     [HttpGet]
-    public async Task<ActionResult> GetAll()
+    public async Task<ActionResult> GetAll([FromQuery] UsuarioQueryFilter filters)
     {
-        var usuarios = await _usuarioService.GetAllUsuariosAsync();
-        var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(usuarios);
+        var pagedUsuarios = await _usuarioService.GetAllUsuariosAsync(filters);
+        var usuariosDto = _mapper.Map<IEnumerable<UsuarioDto>>(pagedUsuarios);
         var response = new ApiResponse<IEnumerable<UsuarioDto>>(usuariosDto);
+        
+        response.Meta = new Metadata
+        {
+            TotalCount = pagedUsuarios.TotalCount,
+            PageSize = pagedUsuarios.PageSize,
+            CurrentPage = pagedUsuarios.CurrentPage,
+            TotalPages = pagedUsuarios.TotalPages,
+            HasNextPage = pagedUsuarios.HasNextPage,
+            HasPreviousPage = pagedUsuarios.HasPreviousPage,
+            NextPageNumber = pagedUsuarios.NextPageNumber,
+            PreviousPageNumber = pagedUsuarios.PreviousPageNumber
+        };
+
         return Ok(response);
     }
 
+    [Authorize(Roles = "admin")]
     [HttpGet("{id}")]
     public async Task<ActionResult> GetById(long id)
     {
@@ -54,6 +70,7 @@ public class UsuarioController : ControllerBase
         return Ok(response);
     }
 
+    [Authorize(Roles = "admin")]
     [HttpPost]
     public async Task<ActionResult> Insert(UsuarioDto usuarioDto)
     {
@@ -68,6 +85,7 @@ public class UsuarioController : ControllerBase
         return Created("", response);
     }
 
+    [Authorize(Roles = "admin")]
     [HttpPut("{id}")]
     public async Task<ActionResult> Update(long id, [FromBody] UsuarioDto usuarioDto)
     {
@@ -85,6 +103,7 @@ public class UsuarioController : ControllerBase
         return Ok(response);
     }
 
+    [Authorize(Roles = "admin")]
     [HttpDelete("{id}")]
     public async Task<ActionResult> Delete(long id)
     {
@@ -92,8 +111,8 @@ public class UsuarioController : ControllerBase
         return NoContent();
     }
 
+    [Authorize]
     [HttpPost("change-password")]
-    [Authorize] 
     public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
     {
         var idUsuario = long.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);

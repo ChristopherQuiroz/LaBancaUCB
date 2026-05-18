@@ -4,8 +4,18 @@ using System.Text;
 
 namespace LaBancaUCB.Core.Entities;
 
+/// <summary>
+/// Representa la entidad Administrador en el sistema
+/// </summary>
+/// <remarks>
+/// Esta entidad almacena la información principal del Administrador 
+/// </remarks>
 public partial class Administrador : BaseEntity
 {
+    /// <summary>
+    /// Identificador único del Administrador
+    /// </summary>
+    /// <example>1</example>
     public override long Id
     {
         get => IdAdministrador;

@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -16,9 +18,14 @@ public class BeneficiarioService : IBeneficiarioService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Beneficiario>> GetAllBeneficiariosAsync()
+    public async Task<PagedList<Beneficiario>> GetAllBeneficiariosAsync(long idUsuarioOwner, PaginationFilter filters)
     {
-        return await _unitOfWork.BeneficiarioRepository.GetAllAsync();
+        var todos = await _unitOfWork.BeneficiarioRepository.GetAllAsync();
+
+        var misBeneficiarios = todos.Where(b => b.IdUsuarioOwner == idUsuarioOwner)
+                                    .OrderByDescending(b => b.CreadoEn);
+
+        return PagedList<Beneficiario>.Create(misBeneficiarios, filters.PageNumber, filters.PageSize);
     }
 
     public async Task<Beneficiario?> GetBeneficiarioByIdAsync(long id)

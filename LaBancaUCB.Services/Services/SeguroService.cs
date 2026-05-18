@@ -1,8 +1,10 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LaBancaUCB.Services.Services;
 
@@ -15,9 +17,11 @@ public class SeguroService : ISeguroService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Seguro>> GetAllSegurosAsync()
+    public async Task<PagedList<Seguro>> GetAllSegurosAsync(PaginationFilter filters)
     {
-        return await _unitOfWork.SeguroRepository.GetAllAsync();
+        var todos = await _unitOfWork.SeguroRepository.GetAllAsync();
+        var ordenados = todos.OrderByDescending(s => s.FechaInicio);
+        return PagedList<Seguro>.Create(ordenados, filters.PageNumber, filters.PageSize);
     }
 
     public async Task<Seguro?> GetSeguroByIdAsync(long id)

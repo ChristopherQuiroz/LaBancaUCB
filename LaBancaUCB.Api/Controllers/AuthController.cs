@@ -4,7 +4,6 @@ using LaBancaUCB.Api.Response;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Services.Interfaces;
 using LaBancaUCB.Services.Validators;
-using System.Threading.Tasks;
 
 namespace LaBancaUCB.Api.Controllers;
 

@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using LaBancaUCB.Core.Entities;
+﻿using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.DTOs;
+using LaBancaUCB.Core.CustomEntities;
 
 namespace LaBancaUCB.Services.Interfaces;
 
 public interface IAdminSolicitudesService
 {
-    Task<IEnumerable<Solicitud>> GetSolicitudesAsync(string? estado);
+    Task<PagedList<Solicitud>> GetSolicitudesAsync(SolicitudQueryFilter estado);
     Task<Solicitud?> GetSolicitudByIdAsync(long id);
     Task GestionarSolicitudAsync(long id, GestionarSolicitudDto dto);
 }

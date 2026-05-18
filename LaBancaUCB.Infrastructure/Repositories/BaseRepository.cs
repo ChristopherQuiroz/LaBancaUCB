@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using LaBancaUCB.Core.Entities;
+﻿using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +8,7 @@ namespace LaBancaUCB.Infrastructure.Repositories
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
         private readonly LaBancaUCBContext _context;
-        private readonly DbSet<T> _entities;
+        protected readonly DbSet<T> _entities;
 
         public BaseRepository(LaBancaUCBContext context)
         {
@@ -40,11 +38,9 @@ namespace LaBancaUCB.Infrastructure.Repositories
 
         public async Task DeleteAsync(long id)
         {
-            var entity = await _entities.FindAsync(id);
-            if (entity != null)
-            {
-                _entities.Remove(entity);
-            }
+            T entity = await GetByIdAsync(id);
+            _entities.Remove(entity);
         }
+
     }
 }

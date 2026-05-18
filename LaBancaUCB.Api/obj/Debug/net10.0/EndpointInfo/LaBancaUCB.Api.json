@@ -1,17 +1,14 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "LaBancaUCB.Api | v1",
-    "version": "1.0.0"
-  },
-  "servers": [
-    {
-      "url": "http://localhost:51566/"
+    "title": "LaBancaUCB API",
+    "description": "Backend LaBancaUCB",
+    "contact": {
+      "name": "LaBancaUCB Team",
+      "email": "ChrisVictor@ucb.edu.bo"
     },
-    {
-      "url": "https://localhost:44359/"
-    }
-  ],
+    "version": "v1"
+  },
   "paths": {
     "/api/admin/solicitudes": {
       "get": {
@@ -20,16 +17,52 @@
         ],
         "parameters": [
           {
-            "name": "estado",
+            "name": "Estado",
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminManageSolicitudDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -45,18 +78,34 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminManageSolicitudDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -72,11 +121,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
@@ -103,112 +148,31 @@
                 "$ref": "#/components/schemas/GestionarSolicitudDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/admin/TransaccionesAdmin": {
-      "get": {
-        "tags": [
-          "TransaccionesAdmin"
-        ],
-        "parameters": [
-          {
-            "name": "estado",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/admin/TransaccionesAdmin/{id}/aprobar": {
-      "post": {
-        "tags": [
-          "TransaccionesAdmin"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/admin/TransaccionesAdmin/{id}/rechazar": {
-      "post": {
-        "tags": [
-          "TransaccionesAdmin"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
-              "format": "int64"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json-patch+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdminTransferActionDto"
-              }
-            },
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdminTransferActionDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdminTransferActionDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AdminTransferActionDto"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AdminManageSolicitudDtoIEnumerableApiResponse"
+                }
               }
             }
           },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -240,8 +204,7 @@
                 "$ref": "#/components/schemas/LoginDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -277,8 +240,7 @@
                 "$ref": "#/components/schemas/BalanceDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -291,6 +253,24 @@
       "get": {
         "tags": [
           "Beneficiarios"
+        ],
+        "parameters": [
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -324,8 +304,7 @@
                 "$ref": "#/components/schemas/BeneficiarioDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -338,6 +317,24 @@
       "get": {
         "tags": [
           "Cuenta"
+        ],
+        "parameters": [
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -373,8 +370,43 @@
                 "$ref": "#/components/schemas/CrearPrestamoDto"
               }
             }
-          },
-          "required": true
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Security": {
+      "post": {
+        "tags": [
+          "Security"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SecurityDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SecurityDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SecurityDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SecurityDto"
+              }
+            }
+          }
         },
         "responses": {
           "200": {
@@ -410,8 +442,7 @@
                 "$ref": "#/components/schemas/CrearSeguroDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -447,8 +478,43 @@
                 "$ref": "#/components/schemas/SolicitarTarjetaDto"
               }
             }
-          },
-          "required": true
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Token/login": {
+      "post": {
+        "tags": [
+          "Token"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLogin"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLogin"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLogin"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLogin"
+              }
+            }
+          }
         },
         "responses": {
           "200": {
@@ -490,6 +556,22 @@
             "schema": {
               "type": "string"
             }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -510,11 +592,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
@@ -553,8 +631,7 @@
                 "$ref": "#/components/schemas/TransferenciaExteriorDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -568,6 +645,143 @@
         "tags": [
           "Transacciones"
         ],
+        "parameters": [
+          {
+            "name": "Estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Tipo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Glosa",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Fecha",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/TransaccionesAdmin": {
+      "get": {
+        "tags": [
+          "TransaccionesAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/TransaccionesAdmin/{id}/aprobar": {
+      "post": {
+        "tags": [
+          "TransaccionesAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/TransaccionesAdmin/{id}/rechazar": {
+      "post": {
+        "tags": [
+          "TransaccionesAdmin"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminTransferActionDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminTransferActionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminTransferActionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdminTransferActionDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -579,6 +793,38 @@
       "get": {
         "tags": [
           "Usuario"
+        ],
+        "parameters": [
+          {
+            "name": "Rol",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Activo",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -612,8 +858,7 @@
                 "$ref": "#/components/schemas/UsuarioDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -633,11 +878,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
@@ -658,11 +899,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
@@ -689,8 +926,7 @@
                 "$ref": "#/components/schemas/UsuarioDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -708,11 +944,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "pattern": "^-?(?:0|[1-9]\\d*)$",
-              "type": [
-                "integer",
-                "string"
-              ],
+              "type": "integer",
               "format": "int64"
             }
           }
@@ -751,8 +983,7 @@
                 "$ref": "#/components/schemas/ChangePasswordDto"
               }
             }
-          },
-          "required": true
+          }
         },
         "responses": {
           "200": {
@@ -764,310 +995,406 @@
   },
   "components": {
     "schemas": {
+      "AdminManageSolicitudDto": {
+        "type": "object",
+        "properties": {
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacionAdmin": {
+            "type": "string",
+            "nullable": true
+          },
+          "montoAprobado": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AdminManageSolicitudDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AdminManageSolicitudDto"
+            },
+            "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
+          }
+        },
+        "additionalProperties": false
+      },
       "AdminTransferActionDto": {
         "type": "object",
         "properties": {
           "transaccionId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "motivo": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "BalanceDto": {
         "type": "object",
         "properties": {
-          "idUsuario": { },
-          "idCuenta": { },
-          "nombreCompleto": { },
+          "idUsuario": {
+            "nullable": true
+          },
+          "idCuenta": {
+            "nullable": true
+          },
+          "nombreCompleto": {
+            "nullable": true
+          },
           "balance": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "BeneficiarioDto": {
         "type": "object",
         "properties": {
           "idBeneficiario": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "idUsuarioOwner": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "alias": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "numeroCuentaDestino": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "bancoDestino": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "nombreTitular": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "esExterior": {
             "type": "boolean"
           },
           "creadoEn": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "ChangePasswordDto": {
         "type": "object",
         "properties": {
           "passwordActual": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "passwordNueva": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "CrearPrestamoDto": {
         "type": "object",
         "properties": {
           "idCuenta": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "montoSolicitado": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "tasaInteres": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "plazoMeses": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "CrearSeguroDto": {
         "type": "object",
         "properties": {
           "idCuenta": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "tipoSeguro": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "primaMensual": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "cobertura": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           }
-        }
+        },
+        "additionalProperties": false
       },
       "GestionarSolicitudDto": {
         "type": "object",
         "properties": {
           "estado": {
-            "type": "string"
+            "type": "string",
+            "description": "Estado a establecer "
           },
           "observacionAdmin": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "description": "",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "LoginDto": {
         "type": "object",
         "properties": {
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "password": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "Metadata": {
+        "type": "object",
+        "properties": {
+          "currentPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPages": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hasPreviousPage": {
+            "type": "boolean"
+          },
+          "hasNextPage": {
+            "type": "boolean"
+          },
+          "nextPageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "previousPageNumber": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
+      "RoleType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SecurityDto": {
+        "type": "object",
+        "properties": {
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "$ref": "#/components/schemas/RoleType"
+          }
+        },
+        "additionalProperties": false
       },
       "SolicitarTarjetaDto": {
         "type": "object",
         "properties": {
           "idCuenta": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "tipo": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       },
       "TransferenciaExteriorDto": {
         "type": "object",
         "properties": {
           "cuentaOrigenId": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "monto": {
-            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
-            "type": [
-              "number",
-              "string"
-            ],
+            "type": "number",
             "format": "double"
           },
           "monedaOrigen": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "monedaDestino": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "cuentaDestino": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "bancoDestino": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "paisDestino": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "referencia": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "fechaProgramada": {
-            "type": [
-              "null",
-              "string"
-            ],
-            "format": "date-time"
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "UserLogin": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "UsuarioDto": {
         "type": "object",
         "properties": {
           "idUsuario": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int64"
           },
           "email": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "nombreCompleto": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "passwordHash": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           },
           "rol": {
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "activo": {
-            "type": [
-              "null",
-              "boolean"
-            ]
+            "type": "boolean",
+            "nullable": true
           },
           "bloqueado": {
-            "type": [
-              "null",
-              "boolean"
-            ]
+            "type": "boolean",
+            "nullable": true
           },
           "fechaDeCreacion": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },
   "tags": [
     {
       "name": "AdminSolicitudes"
-    },
-    {
-      "name": "TransaccionesAdmin"
     },
     {
       "name": "Auth"
@@ -1085,16 +1412,25 @@
       "name": "Prestamos"
     },
     {
+      "name": "Security"
+    },
+    {
       "name": "Seguros"
     },
     {
       "name": "Solicitudes"
     },
     {
+      "name": "Token"
+    },
+    {
       "name": "Transaccion"
     },
     {
       "name": "Transacciones"
+    },
+    {
+      "name": "TransaccionesAdmin"
     },
     {
       "name": "Usuario"

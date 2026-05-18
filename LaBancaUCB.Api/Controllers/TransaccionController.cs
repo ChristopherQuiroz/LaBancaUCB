@@ -5,8 +5,7 @@ using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+using LaBancaUCB.Core.CustomEntities;
 
 namespace LaBancaUCB.Api.Controllers;
 
@@ -33,9 +32,25 @@ public class TransaccionController : ControllerBase
             return Unauthorized(new { message = "Token inválido o usuario no identificado" });
         }
 
-        var transacciones = await _transaccionService.GetHistorialByUsuarioIdAsync(idUsuario, filters);
-        var transaccionesDto = _mapper.Map<IEnumerable<TransaccionDto>>(transacciones);
+        var pagedTransacciones = await _transaccionService.GetHistorialByUsuarioIdAsync(idUsuario, filters);
+
+        var transaccionesDto = _mapper.Map<IEnumerable<TransaccionDto>>(pagedTransacciones);
+
         var response = new ApiResponse<IEnumerable<TransaccionDto>>(transaccionesDto);
+
+        var metadata = new Metadata
+        {
+            TotalCount = pagedTransacciones.TotalCount,
+            PageSize = pagedTransacciones.PageSize,
+            CurrentPage = pagedTransacciones.CurrentPage,
+            TotalPages = pagedTransacciones.TotalPages,
+            HasNextPage = pagedTransacciones.HasNextPage,
+            HasPreviousPage = pagedTransacciones.HasPreviousPage,
+            NextPageNumber = pagedTransacciones.NextPageNumber,
+            PreviousPageNumber = pagedTransacciones.PreviousPageNumber
+        };
+
+        response.Meta = metadata;
 
         return Ok(response);
     }

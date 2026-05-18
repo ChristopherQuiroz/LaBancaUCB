@@ -1,13 +1,11 @@
 ﻿using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Text;
-namespace LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Core.CustomEntities;
 
+namespace LaBancaUCB.Services.Interfaces;
 public interface IUsuarioService
 {
-    Task<IEnumerable<Usuario>> GetAllUsuariosAsync();
+    Task<PagedList<Usuario>> GetAllUsuariosAsync(UsuarioQueryFilter filters);
     Task<Usuario?> GetUsuarioByIdAsync(long id);
     Task InsertUsuarioAsync(Usuario usuario);
     Task UpdateUsuarioAsync(Usuario usuario);

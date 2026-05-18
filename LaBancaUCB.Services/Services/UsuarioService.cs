@@ -3,10 +3,8 @@ using LaBancaUCB.Core.Entities;
 using LaBancaUCB.Core.Exceptions;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Services.Interfaces;
-using System;
-using System.Collections.Generic;
+using LaBancaUCB.Core.CustomEntities;
 using System.Net;
-using System.Threading.Tasks;
 
 namespace LaBancaUCB.Services.Services;
 public class UsuarioService : IUsuarioService
@@ -18,9 +16,25 @@ public class UsuarioService : IUsuarioService
         _unitOfWork = unitOfWork;
     }
 
-    public async Task<IEnumerable<Usuario>> GetAllUsuariosAsync()
+    public async Task<PagedList<Usuario>> GetAllUsuariosAsync(UsuarioQueryFilter filters)
     {
-        return await _unitOfWork.UsuarioRepository.GetAllAsync();
+        var todos = await _unitOfWork.UsuarioRepository.GetAllAsync();
+        var query = todos.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(filters.Rol))
+        {
+            query = query.Where(u => u.Rol.Equals(filters.Rol, StringComparison.OrdinalIgnoreCase));
+        }
+        if (filters.Activo.HasValue)
+        {
+            query = query.Where(u => u.Activo == filters.Activo.Value);
+        }
+
+        var usuariosOrdenados = query.OrderByDescending(u => u.FechaDeCreacion);
+
+        var pagedUsuarios = PagedList<Usuario>.Create(usuariosOrdenados, filters.PageNumber, filters.PageSize);
+
+        return pagedUsuarios;
     }
 
     public async Task<Usuario?> GetUsuarioByIdAsync(long id)

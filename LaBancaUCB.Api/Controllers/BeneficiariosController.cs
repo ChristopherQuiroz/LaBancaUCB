@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
+﻿using AutoMapper;
 using FluentValidation;
-using AutoMapper;
-using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Core.CustomEntities;
 using LaBancaUCB.Core.DTOs;
 using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Services.Interfaces;
 using LaBancaUCB.Services.Validators;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace LaBancaUCB.Api.Controllers;
 
@@ -29,14 +30,30 @@ public class BeneficiariosController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAllMisBeneficiarios()
+    public async Task<IActionResult> GetAllMisBeneficiarios([FromQuery] PaginationFilter filters)
     {
         var idUsuario = long.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
 
-        var todos = await _beneficiarioService.GetAllBeneficiariosAsync();
-        var misBeneficiarios = todos.Where(b => b.IdUsuarioOwner == idUsuario);
+        var pagedBeneficiarios = await _beneficiarioService.GetAllBeneficiariosAsync(idUsuario, filters);
 
-        return Ok(_mapper.Map<IEnumerable<BeneficiarioDto>>(misBeneficiarios));
+        var beneficiariosDto = _mapper.Map<IEnumerable<BeneficiarioDto>>(pagedBeneficiarios);
+
+        var response = new Api.Response.ApiResponse<IEnumerable<BeneficiarioDto>>(beneficiariosDto)
+        {
+            Meta = new Metadata
+            {
+                TotalCount = pagedBeneficiarios.TotalCount,
+                PageSize = pagedBeneficiarios.PageSize,
+                CurrentPage = pagedBeneficiarios.CurrentPage,
+                TotalPages = pagedBeneficiarios.TotalPages,
+                HasNextPage = pagedBeneficiarios.HasNextPage,
+                HasPreviousPage = pagedBeneficiarios.HasPreviousPage,
+                NextPageNumber = pagedBeneficiarios.NextPageNumber,
+                PreviousPageNumber = pagedBeneficiarios.PreviousPageNumber
+            }
+        };
+
+        return Ok(response);
     }
 
     [HttpPost]
