@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data;
-using System.Threading.Tasks;
+﻿using System.Data;
 using LaBancaUCB.Core.Entities;
 
 namespace LaBancaUCB.Core.Interfaces
@@ -19,7 +17,9 @@ namespace LaBancaUCB.Core.Interfaces
         IBaseRepository<Prestamo> PrestamoRepository { get; }
         IBaseRepository<Solicitud> SolicitudRepository { get; }
 
-        ISecurityRepository SecurityRepository { get; }
+        IBaseRepository<AuditoriaCuenta> AuditoriaCuentaRepository { get; }
+
+        IBaseRepository<CodigoQr> CodigoQrRepository { get; }
 
         Task BeginTransactionAsync();
         Task CommitAsync();

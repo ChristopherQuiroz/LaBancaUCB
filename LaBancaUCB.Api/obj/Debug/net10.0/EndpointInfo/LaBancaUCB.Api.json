@@ -15,6 +15,8 @@
         "tags": [
           "AdminSolicitudes"
         ],
+        "summary": "Obtiene una lista paginada de solicitudes aplicando filtros.",
+        "description": "Este método utiliza un mapeador para convertir las solicitudes recuperadas en DTOs que luego se devuelven junto con la información de paginación.",
         "parameters": [
           {
             "name": "Estado",
@@ -42,7 +44,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna la lista de [AdminManageSolicitudDto]",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +54,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "No existen registros con los filtros especificados",
             "content": {
               "application/json": {
                 "schema": {
@@ -62,7 +64,7 @@
             }
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -72,10 +74,13 @@
         "tags": [
           "AdminSolicitudes"
         ],
+        "summary": "Obtiene una solicitud específica por su identificador.",
+        "description": "Este método busca la solicitud en la base de datos y la mapea a un DTO.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID único de la solicitud.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -85,7 +90,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna la solicitud encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -95,7 +100,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "No existe una solicitud con ese ID",
             "content": {
               "application/json": {
                 "schema": {
@@ -105,7 +110,7 @@
             }
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -115,10 +120,13 @@
         "tags": [
           "AdminSolicitudes"
         ],
+        "summary": "Aprueba o rechaza una solicitud (cambia su estado).",
+        "description": "Este método actualiza el estado de la solicitud en el sistema. \r\nSolo los administradores pueden ejecutar esta acción.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID de la solicitud a gestionar.",
             "required": true,
             "schema": {
               "type": "integer",
@@ -127,6 +135,7 @@
           }
         ],
         "requestBody": {
+          "description": "Objeto que contiene el nuevo estado (aprobado/rechazado).",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -152,7 +161,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "La solicitud fue gestionada exitosamente",
             "content": {
               "application/json": {
                 "schema": {
@@ -162,7 +171,7 @@
             }
           },
           "404": {
-            "description": "Not Found",
+            "description": "Solicitud no encontrada",
             "content": {
               "application/json": {
                 "schema": {
@@ -172,7 +181,10 @@
             }
           },
           "500": {
-            "description": "Internal Server Error"
+            "description": "Error interno del servidor"
+          },
+          "400": {
+            "description": "Datos inválidos o estado no permitido"
           }
         }
       }
@@ -335,6 +347,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "LaBancaUCB.Api"
         ],
         "responses": {
           "200": {
@@ -1407,6 +1431,9 @@
     },
     {
       "name": "Cuenta"
+    },
+    {
+      "name": "LaBancaUCB.Api"
     },
     {
       "name": "Prestamos"

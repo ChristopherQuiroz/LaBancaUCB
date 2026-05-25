@@ -19,7 +19,8 @@ public partial class LaBancaUCBContext : DbContext
     public virtual DbSet<Tarjeta> Tarjetas { get; set; }
     public virtual DbSet<Prestamo> Prestamos { get; set; }
     public virtual DbSet<Solicitud> Solicitudes { get; set; }
-    public virtual DbSet<Security> Securities { get; set; }
+    public virtual DbSet<AuditoriaCuenta> AuditoriaCuentas { get; set; }
+    public virtual DbSet<CodigoQr> CodigosQr { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(LaBancaUCBContext).Assembly);

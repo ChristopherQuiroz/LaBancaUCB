@@ -15,6 +15,7 @@ namespace LaBancaUCB.Api.Controllers
     {
         private readonly IConfiguration _configuration;
         private readonly ISecurityService _securityService;
+        private readonly IPasswordService _passwordService;
 
         public TokenController(IConfiguration configuration,
             ISecurityService securityService)
@@ -40,7 +41,8 @@ namespace LaBancaUCB.Api.Controllers
         private async Task<(bool, Security)> IsValidUser(UserLogin userLogin)
         {
             var user = await _securityService.GetLoginByCredentials(userLogin);
-            return (user != null, user);
+            var isValid = _passwordService.Check(user.Password, userLogin.Password);
+            return (isValid, user);
         }
 
         private string GenerateToken(Security user)

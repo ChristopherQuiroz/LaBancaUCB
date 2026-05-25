@@ -1,6 +1,6 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Infrastructure.Services;
 using LaBancaUCB.Core.Interfaces;
 using LaBancaUCB.Infrastructure.Data;
 using LaBancaUCB.Infrastructure.Mappings;
@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using LaBancaUCB.Core.CustomEntities;
 
-namespace LaBancaUCB.Api;
-public class Program
+public partial class Program
 {
-    public static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
@@ -24,15 +24,19 @@ public class Program
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         builder.Services.AddScoped<IUsuarioService, UsuarioService>();
         builder.Services.AddScoped<IAuthService, AuthService>();
-        builder.Services.AddScoped<ISecurityService, SecurityService>();
         builder.Services.AddScoped<ICuentaService, CuentaService>();
+        builder.Services.AddScoped<IPrestamoService, PrestamoService>();
         builder.Services.AddScoped<ITransaccionService, TransaccionService>();
         builder.Services.AddScoped<IBeneficiarioService, BeneficiarioService>();
         builder.Services.AddScoped<IProductosService, ProductosService>();
         builder.Services.AddScoped<IAdminSolicitudesService, AdminSolicitudesService>();
         builder.Services.AddSingleton<IDbConnectionFactory, DbConnectionFactory>();
         builder.Services.AddScoped<IDapperContext, DapperContext>();
+        builder.Services.AddScoped<IEmailService, SmtpEmailService>();
+        builder.Services.AddScoped<IPagoQrService, PagoQrService>();
+
         builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
+
         builder.Services.AddFluentValidationAutoValidation();
         builder.Services.AddValidatorsFromAssemblyContaining<UsuarioDtoValidator>();
         builder.Services.AddScoped<CrearUsuarioValidator>();
@@ -45,33 +49,9 @@ public class Program
             {
                 options.SerializerSettings.ReferenceLoopHandling =
                     Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            }
-            ).ConfigureApiBehaviorOptions(options =>
-            {
-                options.SuppressModelStateInvalidFilter = true;
             });
 
-        builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(options =>
-        {
-            options.SwaggerDoc("v1", new()
-            {
-                Title = "LaBancaUCB API",
-                Version = "v1",
-                Description = "Backend LaBancaUCB",
-                Contact = new()
-                {
-                    Name = "LaBancaUCB Team",
-                    Email = "ChrisVictor@ucb.edu.bo"
-                }
-            });
-
-
-            var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-            options.IncludeXmlComments(xmlPath);
-            options.EnableAnnotations();
-        });
+        builder.Services.AddOpenApi();
 
         builder.Services.AddDbContext<LaBancaUCBContext>(options =>
             options.UseMySql(
@@ -80,40 +60,50 @@ public class Program
             )
         );
 
-        builder.Services.AddAuthentication(options =>
+        builder.Services.Configure<PasswordOptions>(
+            builder.Configuration.GetSection("PasswordOptions"));
+
+        builder.Services.AddEndpointsApiExplorer();
+        builder.Services.AddSwaggerGen(optinos =>
         {
-            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        })
-        .AddJwtBearer(options =>
-        {
-            options.TokenValidationParameters = new TokenValidationParameters
+            optinos.SwaggerDoc("v1", new()
             {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = builder.Configuration["Authentication:Issuer"],
-                ValidAudience = builder.Configuration["Authentication:Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Authentication:SecretKey"]!))
-            };
+                Title = "LaBancaUCB API",
+                Version = "v1",
+                Description = "API para la gestión de la banca en línea de LaBancaUCB"
+            })
         });
+
+        builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
+                    ValidAudience = builder.Configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
+                };
+            });
 
         builder.Services.AddAuthorization();
 
         var app = builder.Build();
-
         app.UseMiddleware<LaBancaUCB.Api.Filters.ExceptionMiddleware>();
 
         if (app.Environment.IsDevelopment())
         {
-            app.UseSwagger();
-            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LaBancaUCB API v1"));
+            app.MapOpenApi();
         }
 
         app.UseHttpsRedirection();
+
         app.UseAuthentication();
         app.UseAuthorization();
+
         app.MapControllers();
 
         app.Run();

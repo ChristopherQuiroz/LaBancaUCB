@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data;
-using System.Threading.Tasks;
+﻿using System.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using LaBancaUCB.Core.Entities;
@@ -24,7 +22,10 @@ namespace LaBancaUCB.Infrastructure.Repositories
         private IBaseRepository<Tarjeta>? _tarjetaRepository;
         private IBaseRepository<Prestamo>? _prestamoRepository;
         private IBaseRepository<Solicitud>? _solicitudRepository;
-        private ISecurityRepository _securityRepository;
+
+        private IBaseRepository<AuditoriaCuenta>? _auditoriaCuentaRepository;
+
+        private IBaseRepository<CodigoQr>? _codigoQrRepository;
 
         public UnitOfWork(LaBancaUCBContext context, IDapperContext dapper)
         {
@@ -87,7 +88,9 @@ namespace LaBancaUCB.Infrastructure.Repositories
         public IBaseRepository<Tarjeta> TarjetaRepository => _tarjetaRepository ??= new BaseRepository<Tarjeta>(_context);
         public IBaseRepository<Prestamo> PrestamoRepository => _prestamoRepository ??= new BaseRepository<Prestamo>(_context);
         public IBaseRepository<Solicitud> SolicitudRepository => _solicitudRepository ??= new BaseRepository<Solicitud>(_context);
-        public ISecurityRepository SecurityRepository => _securityRepository ??= new SecurityRepository(_context);
+        public IBaseRepository<AuditoriaCuenta> AuditoriaCuentaRepository => _auditoriaCuentaRepository ??= new BaseRepository<AuditoriaCuenta>(_context);
+        public IBaseRepository<CodigoQr> CodigoQrRepository => _codigoQrRepository ??= new BaseRepository<CodigoQr>(_context);
+
         public void Dispose()
         {
             if (_context != null)

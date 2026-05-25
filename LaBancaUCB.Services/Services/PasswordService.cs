@@ -1,0 +1,58 @@
+﻿using LaBancaUCB.Core.CustomEntities;
+using LaBancaUCB.Services.Interfaces;
+using Microsoft.Extensions.Options;
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace LaBancaUCB.Services.Services
+{
+    internal class PasswordService : IPasswordService
+    {
+        private readonly PasswordOptions _options;
+
+        public PasswordService(IOptions<PasswordOptions> options)
+        {
+            _options = options.Value;
+        }
+        public bool Check(string hash, string password)
+        {
+            var parts = hash.Split('.');
+            if (parts.Length != 3)
+            {
+                throw new FormatException("Formato de Hash incorrecto");
+            }
+
+            var iterations = Convert.ToInt32(parts[0]);
+            var salt = Convert.FromBase64String(parts[1]);
+            var key = Convert.FromBase64String(parts[2]);
+
+            byte[] keyToCheck = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                iterations,
+                HashAlgorithmName.SHA256,
+                _options.KeySize
+            );
+            return keyToCheck.SequenceEqual(key);
+        }
+
+        public string Hash(string password)
+        {
+            byte[] salt = RandomNumberGenerator.GetBytes(_options.SaltSize);
+            byte[] key = Rfc2898DeriveBytes.Pbkdf2(
+                password,
+                salt,
+                _options.Iterations,
+                HashAlgorithmName.SHA256,
+                _options.KeySize
+            );
+
+            var keyBase64 = Convert.ToBase64String(key);
+            var saltBase64 = Convert.ToBase64String(salt);
+
+            return $"{_options.Iterations}.{saltBase64}.{keyBase64}";
+        }
+    }
+}

@@ -3,52 +3,28 @@
   "WorkspaceRootPath": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\securitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\controllers\\adminsolicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\adminsolicitudescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.services\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|solutionrelative:labancaucb.services\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.infrastructure\\repositories\\securityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\repositories\\securityrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.services\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|solutionrelative:labancaucb.services\\interfaces\\ipasswordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.infrastructure\\data\\labancaucbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\labancaucbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\enums\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\entities\\security.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.infrastructure\\data\\configurations\\securityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\data\\configurations\\securityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.services\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBB783E5-0C06-4759-BA2D-6CE9449E0B48}|LaBancaUCB.Services\\LaBancaUCB.Services.csproj|solutionrelative:labancaucb.services\\interfaces\\isecurityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|solutionrelative:labancaucb.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5043C537-5F70-1E81-5300-E29D3BCE1083}|LaBancaUCB.Infrastructure\\LaBancaUCB.Infrastructure.csproj|solutionrelative:labancaucb.infrastructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.core\\customentities\\passwordoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B117F6AF-4154-53CD-99B8-B4AA4A5CE2EE}|LaBancaUCB.Core\\LaBancaUCB.Core.csproj|solutionrelative:labancaucb.core\\customentities\\passwordoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4A24BC3B-7C09-3C30-9587-1E8431FBDAB4}|LaBancaUCB.Api\\LaBancaUCB.Api.csproj|d:\\cosas de chris\\ucb\\semestre 5 - 2026\\tecweb i\\final proyect\\labancaucb\\labancaucb.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -62,8 +38,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SecurityController.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\SecurityController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\SecurityController.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\SecurityController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\SecurityController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:20:05.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:17:28.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PasswordService.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Services\\PasswordService.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Services\\Services\\PasswordService.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Services\\PasswordService.cs",
+              "RelativeToolTip": "LaBancaUCB.Services\\Services\\PasswordService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:15:41.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPasswordService.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Interfaces\\IPasswordService.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Services\\Interfaces\\IPasswordService.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Interfaces\\IPasswordService.cs",
+              "RelativeToolTip": "LaBancaUCB.Services\\Interfaces\\IPasswordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:15:32.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Program.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Program.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Program.cs",
+              "RelativeToolTip": "LaBancaUCB.Api\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwD8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T17:03:08.578Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -74,162 +115,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Repositories\\BaseRepository.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\BaseRepository.cs",
-              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T21:03:23.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SecurityRepository.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\SecurityRepository.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Repositories\\SecurityRepository.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\SecurityRepository.cs",
-              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Repositories\\SecurityRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:40:20.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Core\\Interfaces\\IUnitOfWork.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Interfaces\\IUnitOfWork.cs",
-              "RelativeToolTip": "LaBancaUCB.Core\\Interfaces\\IUnitOfWork.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowBUAAAA3AAAAAAAAAA==",
+              "Title": "PasswordOptions.cs",
+              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\CustomEntities\\PasswordOptions.cs",
+              "RelativeDocumentMoniker": "LaBancaUCB.Core\\CustomEntities\\PasswordOptions.cs",
+              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\CustomEntities\\PasswordOptions.cs",
+              "RelativeToolTip": "LaBancaUCB.Core\\CustomEntities\\PasswordOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:51:05.316Z"
+              "WhenOpened": "2026-05-25T17:08:23.391Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RoleType.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Enums\\RoleType.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Core\\Enums\\RoleType.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Enums\\RoleType.cs",
-              "RelativeToolTip": "LaBancaUCB.Core\\Enums\\RoleType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:11:36.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Program.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Program.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Program.cs",
-              "RelativeToolTip": "LaBancaUCB.Api\\Program.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAwwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T17:42:16.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminSolicitudesController.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\AdminSolicitudesController.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\AdminSolicitudesController.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\AdminSolicitudesController.cs",
-              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\AdminSolicitudesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T21:16:08.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Security.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Security.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Core\\Entities\\Security.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Core\\Entities\\Security.cs",
-              "RelativeToolTip": "LaBancaUCB.Core\\Entities\\Security.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:12:58.898Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LaBancaUCBContext.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\LaBancaUCBContext.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\LaBancaUCBContext.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\LaBancaUCBContext.cs",
-              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\LaBancaUCBContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA5wBUAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:50:14.453Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SecurityConfiguration.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
-              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Data\\Configurations\\SecurityConfiguration.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwBoAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:04:25.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ISecurityService.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Interfaces\\ISecurityService.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Services\\Interfaces\\ISecurityService.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Services\\Interfaces\\ISecurityService.cs",
-              "RelativeToolTip": "LaBancaUCB.Services\\Interfaces\\ISecurityService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:58:52.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Api\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "LaBancaUCB.Api\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-18T20:43:33.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "LaBancaUCB.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "LaBancaUCB.Infrastructure\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAA0wFkAAAByAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-13T21:51:28.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\appsettings.json",
               "RelativeDocumentMoniker": "LaBancaUCB.Api\\appsettings.json",
               "ToolTip": "D:\\Cosas de Chris\\UCB\\Semestre 5 - 2026\\TecWeb I\\Final Proyect\\LaBancaUCB\\LaBancaUCB.Api\\appsettings.json",
               "RelativeToolTip": "LaBancaUCB.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-18T17:49:14.653Z"
+              "WhenOpened": "2026-05-25T17:07:12.198Z",
+              "EditorCaption": ""
             }
           ]
         }
