@@ -1,0 +1,124 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using LaBancaUCB.Core.Entities;
+using LaBancaUCB.Core.Interfaces;
+using LaBancaUCB.Services.Interfaces;
+using LaBancaUCB.Core.DTOs;
+using System.Security.Claims;
+
+namespace LaBancaUCB.Services.Services;
+
+public class TransaccionService : ITransaccionService
+{
+    private readonly IBaseRepository<Transaccion> _transaccionRepository;
+    private readonly IBaseRepository<Cuenta> _cuentaRepository;
+
+    public TransaccionService(
+        IBaseRepository<Transaccion> transaccionRepository,
+        IBaseRepository<Cuenta> cuentaRepository)
+    {
+        _transaccionRepository = transaccionRepository;
+        _cuentaRepository = cuentaRepository;
+    }
+
+    public async Task<IEnumerable<Transaccion>> GetHistorialByUsuarioIdAsync(long idUsuario)
+    {
+        var todasCuentas = await _cuentaRepository.GetAllAsync();
+        var cuentasUsuario = todasCuentas.Where(c => c.IdUsuario == idUsuario).ToList();
+
+        var idsCuentas = cuentasUsuario.Select(c => c.IdCuenta).ToList();
+        var numerosCuentas = cuentasUsuario.Select(c => c.NumeroCuenta).ToList();
+
+        var todasTransacciones = await _transaccionRepository.GetAllAsync();
+
+        var historial = todasTransacciones.Where(t =>
+            idsCuentas.Contains(t.IdCuentaOrigen) ||
+            numerosCuentas.Contains(t.IdCuentaDestino)
+        ).OrderByDescending(t => t.FechaHora);
+
+        return historial;
+    }
+
+    public async Task<Transaccion> CrearTransferenciaExteriorAsync(TransferenciaExteriorDto dto, long usuarioId)
+    {
+        var cuenta = await _cuentaRepository.GetByIdAsync(dto.CuentaOrigenId);
+        if (cuenta == null)
+            throw new Exception("Cuenta origen no encontrada");
+
+        if (cuenta.IdUsuario != usuarioId)
+            throw new Exception("La cuenta no pertenece al usuario autenticado");
+
+        if (cuenta.Saldo < dto.Monto)
+            throw new Exception("Saldo insuficiente");
+
+        cuenta.Saldo -= dto.Monto;
+        await _cuentaRepository.UpdateAsync(cuenta);
+
+        var transaccion = new Transaccion
+        {
+            IdCuentaOrigen = dto.CuentaOrigenId,
+            IdCuentaDestino = dto.CuentaDestino,
+            NombreDestino = dto.BancoDestino + " - " + dto.PaisDestino,
+            Tipo = "exterior",
+            Monto = dto.Monto,
+            Moneda = dto.MonedaDestino,
+            TipoCambio = 0m,
+            Glosa = dto.Referencia,
+            Estado = "pendiente", 
+            FechaHora = dto.FechaProgramada ?? DateTime.UtcNow
+        };
+
+        await _transaccionRepository.AddAsync(transaccion);
+
+        return transaccion;
+    }
+
+    public async Task<IEnumerable<Transaccion>> ListarTransferenciasPorEstadoAsync(string? estado = null)
+    {
+        var todas = await _transaccionRepository.GetAllAsync();
+        if (string.IsNullOrWhiteSpace(estado))
+            return todas.OrderByDescending(t => t.FechaHora);
+
+        return todas.Where(t => t.Estado.Equals(estado, StringComparison.OrdinalIgnoreCase))
+                    .OrderByDescending(t => t.FechaHora);
+    }
+
+    public async Task AprobarTransferenciaAsync(long transaccionId, long adminId)
+    {
+        var trans = await _transaccionRepository.GetByIdAsync(transaccionId);
+        if (trans == null)
+            throw new Exception("Transacción no encontrada");
+
+        if (!trans.Estado.Equals("pendiente", StringComparison.OrdinalIgnoreCase))
+            throw new Exception("Solo se pueden aprobar transacciones en estado Pendiente");
+
+        trans.Estado = "completada";
+        trans.FechaHora = DateTime.UtcNow;
+
+        await _transaccionRepository.UpdateAsync(trans);
+    }
+
+    public async Task RechazarTransferenciaAsync(long transaccionId, string motivo, long adminId)
+    {
+        var trans = await _transaccionRepository.GetByIdAsync(transaccionId);
+        if (trans == null)
+            throw new Exception("Transacción no encontrada");
+
+        if (!trans.Estado.Equals("pendiente", StringComparison.OrdinalIgnoreCase))
+            throw new Exception("Solo se pueden rechazar transacciones en estado pendiente");
+
+        var cuenta = await _cuentaRepository.GetByIdAsync(trans.IdCuentaOrigen);
+        if (cuenta != null)
+        {
+            cuenta.Saldo += trans.Monto;
+            await _cuentaRepository.UpdateAsync(cuenta);
+        }
+
+        trans.Estado = "rechazada";
+        trans.Glosa = (trans.Glosa ?? string.Empty) + " | Rechazo: " + (motivo ?? string.Empty);
+        trans.FechaHora = DateTime.UtcNow;
+
+        await _transaccionRepository.UpdateAsync(trans);
+    }
+}
