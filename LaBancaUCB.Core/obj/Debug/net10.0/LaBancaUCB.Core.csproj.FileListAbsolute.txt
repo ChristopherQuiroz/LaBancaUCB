@@ -91,3 +91,5 @@ D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBanc
 D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\refint\LaBancaUCB.Core.dll
 D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.pdb
 D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\ref\LaBancaUCB.Core.dll
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Core\bin\Debug\net10.0\LaBancaUCB.Core.xml
+D:\Cosas de Chris\UCB\Semestre 5 - 2026\TecWeb I\Final Proyect\LaBancaUCB\LaBancaUCB.Core\obj\Debug\net10.0\LaBancaUCB.Core.xml

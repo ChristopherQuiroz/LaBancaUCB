@@ -18,6 +18,7 @@ namespace LaBancaUCB.Core.Interfaces
         IBaseRepository<Solicitud> SolicitudRepository { get; }
 
         IBaseRepository<AuditoriaCuenta> AuditoriaCuentaRepository { get; }
+        ISecurityRepository SecurityRepository { get; }
 
         IBaseRepository<CodigoQr> CodigoQrRepository { get; }
 

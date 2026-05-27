@@ -34,6 +34,7 @@ public partial class Program
         builder.Services.AddScoped<IDapperContext, DapperContext>();
         builder.Services.AddScoped<IEmailService, SmtpEmailService>();
         builder.Services.AddScoped<IPagoQrService, PagoQrService>();
+        builder.Services.AddScoped<IPasswordService, PasswordService>();
 
         builder.Services.AddAutoMapper(typeof(UsuarioProfile).Assembly);
 
@@ -64,14 +65,24 @@ public partial class Program
             builder.Configuration.GetSection("PasswordOptions"));
 
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(optinos =>
+        builder.Services.AddSwaggerGen(options =>
         {
-            optinos.SwaggerDoc("v1", new()
+            options.SwaggerDoc("v1", new()
             {
                 Title = "LaBancaUCB API",
                 Version = "v1",
                 Description = "API para la gestión de la banca en línea de LaBancaUCB"
-            })
+            });
+
+            var xmlApi = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            var xmlApiPath = Path.Combine(AppContext.BaseDirectory, xmlApi);
+            options.IncludeXmlComments(xmlApiPath);
+
+            var xmlCore = "LaBancaUCB.Core.xml";
+            var xmlCorePath = Path.Combine(AppContext.BaseDirectory, xmlCore);
+            options.IncludeXmlComments(xmlCorePath);
+
+            options.EnableAnnotations();
         });
 
         builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -92,6 +103,17 @@ public partial class Program
         builder.Services.AddAuthorization();
 
         var app = builder.Build();
+        
+        if(app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "LaBancaUCB API v1");
+                options.RoutePrefix = string.Empty;
+            });
+        }
+
         app.UseMiddleware<LaBancaUCB.Api.Filters.ExceptionMiddleware>();
 
         if (app.Environment.IsDevelopment())

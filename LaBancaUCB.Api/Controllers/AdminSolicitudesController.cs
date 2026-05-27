@@ -31,6 +31,9 @@ public class AdminSolicitudesController : ControllerBase
     /// Este método utiliza un mapeador para convertir las solicitudes recuperadas en DTOs que luego se devuelven junto con la información de paginación.
     /// </remarks>
     /// <param name="filters">Filtros como número de página, tamaño, estado, etc.</param>
+    /// <param name="Estado">Estado actual que se encuentra la solicitud</param>
+    /// <param name="PageSize">Tamaño de la página</param>
+    /// <param name="PageNumber">Número de la página</param>
     /// <returns>Una respuesta con la lista paginada de <see cref="AdminManageSolicitudDto"/>.</returns>
     /// <response code="200">Retorna la lista de [AdminManageSolicitudDto]</response>
     /// <response code="404">No existen registros con los filtros especificados</response>

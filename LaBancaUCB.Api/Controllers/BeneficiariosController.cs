@@ -7,15 +7,18 @@ using LaBancaUCB.Services.Interfaces;
 using LaBancaUCB.Services.Validators;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Security.Claims;
-using System.Threading.Tasks;
+using System.Net;
 
 namespace LaBancaUCB.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
 [Authorize(Roles = "cliente")]
+[Produces("application/json")]
+/// <summary>
+/// Gestiona beneficiarios del usuario (listar e insertar).
+/// </summary>
 public class BeneficiariosController : ControllerBase
 {
     private readonly IBeneficiarioService _beneficiarioService;
@@ -29,7 +32,16 @@ public class BeneficiariosController : ControllerBase
         _validator = validator;
     }
 
+    /// <summary>
+    /// Obtiene los beneficiarios del usuario autenticado (paginado).
+    /// </summary>
+    /// <response code="200">Retorna la lista paginada de beneficiarios</response>
+    /// <response code="401">No autorizado</response>
+    /// <response code="500">Error interno del servidor</response>
     [HttpGet]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(Api.Response.ApiResponse<IEnumerable<BeneficiarioDto>>))]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     public async Task<IActionResult> GetAllMisBeneficiarios([FromQuery] PaginationFilter filters)
     {
         var idUsuario = long.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
@@ -56,7 +68,16 @@ public class BeneficiariosController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Inserta un nuevo beneficiario para el usuario autenticado.
+    /// </summary>
+    /// <response code="200">Beneficiario registrado exitosamente</response>
+    /// <response code="400">Datos inválidos</response>
+    /// <response code="401">No autorizado</response>
     [HttpPost]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
     public async Task<IActionResult> Insert([FromBody] BeneficiarioDto dto)
     {
         await _validator.ValidateAndThrowAsync(dto);

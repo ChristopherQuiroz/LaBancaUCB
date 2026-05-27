@@ -11,11 +11,16 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace LaBancaUCB.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json")]
+/// <summary>
+/// Gestión de usuarios (endpoints administrables).
+/// </summary>
 public class UsuarioController : ControllerBase
 {
     private readonly IUsuarioService _usuarioService;
@@ -35,7 +40,16 @@ public class UsuarioController : ControllerBase
         _actualizarValidator = actualizarValidator;
     }
 
+    /// <summary>
+    /// Obtiene la lista paginada de usuarios (solo admin).
+    /// </summary>
+    /// <response code="200">Retorna la lista paginada de usuarios</response>
+    /// <response code="401">No autorizado</response>
+    /// <response code="500">Error interno del servidor</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<UsuarioDto>>))]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     [HttpGet]
     public async Task<ActionResult> GetAll([FromQuery] UsuarioQueryFilter filters)
     {
@@ -58,7 +72,17 @@ public class UsuarioController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Obtiene un usuario por Id (solo admin).
+    /// </summary>
+    /// <param name="id">Identificador del usuario</param>
+    /// <response code="200">Retorna el usuario solicitado</response>
+    /// <response code="404">Usuario no encontrado</response>
+    /// <response code="401">No autorizado</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<UsuarioDto>))]
+    [ProducesResponseType((int)HttpStatusCode.NotFound)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
     [HttpGet("{id}")]
     public async Task<ActionResult> GetById(long id)
     {
@@ -70,7 +94,14 @@ public class UsuarioController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Inserta un nuevo usuario (solo admin).
+    /// </summary>
+    /// <response code="201">Usuario creado correctamente</response>
+    /// <response code="400">Datos inválidos</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.Created, Type = typeof(ApiResponse<UsuarioDto>))]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     [HttpPost]
     public async Task<ActionResult> Insert(UsuarioDto usuarioDto)
     {
@@ -85,7 +116,15 @@ public class UsuarioController : ControllerBase
         return Created("", response);
     }
 
+    /// <summary>
+    /// Actualiza un usuario (solo admin).
+    /// </summary>
+    /// <param name="id">Identificador del usuario</param>
+    /// <response code="200">Usuario actualizado</response>
+    /// <response code="400">Datos inválidos</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<UsuarioDto>))]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     [HttpPut("{id}")]
     public async Task<ActionResult> Update(long id, [FromBody] UsuarioDto usuarioDto)
     {
@@ -103,7 +142,15 @@ public class UsuarioController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Elimina un usuario (solo admin).
+    /// </summary>
+    /// <param name="id">Identificador del usuario</param>
+    /// <response code="204">Eliminado correctamente</response>
+    /// <response code="401">No autorizado</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.NoContent)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
     [HttpDelete("{id}")]
     public async Task<ActionResult> Delete(long id)
     {
@@ -111,7 +158,14 @@ public class UsuarioController : ControllerBase
         return NoContent();
     }
 
+    /// <summary>
+    /// Cambia la contraseña del usuario autenticado.
+    /// </summary>
+    /// <response code="200">Contraseña actualizada</response>
+    /// <response code="401">No autorizado</response>
     [Authorize]
+    [ProducesResponseType((int)HttpStatusCode.OK)]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
     [HttpPost("change-password")]
     public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
     {

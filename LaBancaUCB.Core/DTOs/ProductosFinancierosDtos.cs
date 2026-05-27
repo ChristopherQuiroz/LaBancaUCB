@@ -1,7 +1,4 @@
 ﻿using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LaBancaUCB.Core.DTOs;
 

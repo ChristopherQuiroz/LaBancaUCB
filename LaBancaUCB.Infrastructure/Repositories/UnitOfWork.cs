@@ -26,12 +26,29 @@ namespace LaBancaUCB.Infrastructure.Repositories
         private IBaseRepository<AuditoriaCuenta>? _auditoriaCuentaRepository;
 
         private IBaseRepository<CodigoQr>? _codigoQrRepository;
+        private ISecurityRepository _securityRepository;
 
         public UnitOfWork(LaBancaUCBContext context, IDapperContext dapper)
         {
             _context = context;
             _dapper = dapper;
         }
+
+        public IDbConnection GetConnection() => _context.Database.GetDbConnection();
+        public IDbTransaction? GetTransaction() => _efTransaction?.GetDbTransaction();
+        public IBaseRepository<Usuario> UsuarioRepository => _usuarioRepository ??= new BaseRepository<Usuario>(_context);
+        public IBaseRepository<Cuenta> CuentaRepository => _cuentaRepository ??= new BaseRepository<Cuenta>(_context);
+        public ITransaccionRepository TransaccionRepository => _transaccionRepository ??= new TransaccionRepository(_context);
+        public IBaseRepository<Beneficiario> BeneficiarioRepository => _beneficiarioRepository ??= new BaseRepository<Beneficiario>(_context);
+        public IBaseRepository<Sesione> SesioneRepository => _sesioneRepository ??= new BaseRepository<Sesione>(_context);
+        public IBaseRepository<Seguro> SeguroRepository => _seguroRepository ??= new BaseRepository<Seguro>(_context);
+        public IBaseRepository<Tarjeta> TarjetaRepository => _tarjetaRepository ??= new BaseRepository<Tarjeta>(_context);
+        public IBaseRepository<Prestamo> PrestamoRepository => _prestamoRepository ??= new BaseRepository<Prestamo>(_context);
+        public IBaseRepository<Solicitud> SolicitudRepository => _solicitudRepository ??= new BaseRepository<Solicitud>(_context);
+        public IBaseRepository<AuditoriaCuenta> AuditoriaCuentaRepository => _auditoriaCuentaRepository ??= new BaseRepository<AuditoriaCuenta>(_context);
+        public IBaseRepository<CodigoQr> CodigoQrRepository => _codigoQrRepository ??= new BaseRepository<CodigoQr>(_context);
+
+        public ISecurityRepository SecurityRepository => _securityRepository ??= new SecurityRepository(_context);
 
         public async Task BeginTransactionAsync()
         {
@@ -76,20 +93,6 @@ namespace LaBancaUCB.Infrastructure.Repositories
                 }
             }
         }
-
-        public IDbConnection GetConnection() => _context.Database.GetDbConnection();
-        public IDbTransaction? GetTransaction() => _efTransaction?.GetDbTransaction();
-        public IBaseRepository<Usuario> UsuarioRepository => _usuarioRepository ??= new BaseRepository<Usuario>(_context);
-        public IBaseRepository<Cuenta> CuentaRepository => _cuentaRepository ??= new BaseRepository<Cuenta>(_context);
-        public ITransaccionRepository TransaccionRepository => _transaccionRepository ??= new TransaccionRepository(_context);
-        public IBaseRepository<Beneficiario> BeneficiarioRepository => _beneficiarioRepository ??= new BaseRepository<Beneficiario>(_context);
-        public IBaseRepository<Sesione> SesioneRepository => _sesioneRepository ??= new BaseRepository<Sesione>(_context);
-        public IBaseRepository<Seguro> SeguroRepository => _seguroRepository ??= new BaseRepository<Seguro>(_context);
-        public IBaseRepository<Tarjeta> TarjetaRepository => _tarjetaRepository ??= new BaseRepository<Tarjeta>(_context);
-        public IBaseRepository<Prestamo> PrestamoRepository => _prestamoRepository ??= new BaseRepository<Prestamo>(_context);
-        public IBaseRepository<Solicitud> SolicitudRepository => _solicitudRepository ??= new BaseRepository<Solicitud>(_context);
-        public IBaseRepository<AuditoriaCuenta> AuditoriaCuentaRepository => _auditoriaCuentaRepository ??= new BaseRepository<AuditoriaCuenta>(_context);
-        public IBaseRepository<CodigoQr> CodigoQrRepository => _codigoQrRepository ??= new BaseRepository<CodigoQr>(_context);
 
         public void Dispose()
         {

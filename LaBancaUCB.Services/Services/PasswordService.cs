@@ -1,14 +1,11 @@
 ﻿using LaBancaUCB.Core.CustomEntities;
 using LaBancaUCB.Services.Interfaces;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace LaBancaUCB.Services.Services
 {
-    internal class PasswordService : IPasswordService
+    public class PasswordService : IPasswordService
     {
         private readonly PasswordOptions _options;
 
@@ -16,6 +13,7 @@ namespace LaBancaUCB.Services.Services
         {
             _options = options.Value;
         }
+
         public bool Check(string hash, string password)
         {
             var parts = hash.Split('.');

@@ -6,12 +6,17 @@ using LaBancaUCB.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using LaBancaUCB.Core.CustomEntities;
+using System.Net;
 
 namespace LaBancaUCB.Api.Controllers;
 
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json")]
+/// <summary>
+/// Endpoints de transacciones y historial para usuarios y administradores.
+/// </summary>
 public class TransaccionController : ControllerBase
 {
     private readonly ITransaccionService _transaccionService;
@@ -23,6 +28,15 @@ public class TransaccionController : ControllerBase
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Obtiene el historial de transacciones del usuario autenticado.
+    /// </summary>
+    /// <response code="200">Retorna la lista paginada de transacciones</response>
+    /// <response code="401">Token inválido o usuario no identificado</response>
+    /// <response code="500">Error interno del servidor</response>
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<TransaccionDto>>))]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     [HttpGet("history")]
     public async Task<ActionResult> GetHistorial([FromQuery] TransaccionQueryFilter filters)
     {
@@ -55,7 +69,15 @@ public class TransaccionController : ControllerBase
         return Ok(response);
     }
 
+    /// <summary>
+    /// Obtiene el historial de un cliente por su Id (solo admin).
+    /// </summary>
+    /// <param name="idUsuario">Identificador del usuario al que se desea ver su historial </param>
+    /// <response code="200">Retorna el historial del cliente</response>
+    /// <response code="401">No autorizado</response>
     [Authorize(Roles = "admin")]
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<TransaccionDto>>))]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
     [HttpGet("history/{idUsuario}")]
     public async Task<ActionResult> GetHistorialPorCliente(long idUsuario)
     {

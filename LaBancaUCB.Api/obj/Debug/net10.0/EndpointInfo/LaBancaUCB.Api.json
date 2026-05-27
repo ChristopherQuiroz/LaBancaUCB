@@ -2,14 +2,309 @@
   "openapi": "3.0.4",
   "info": {
     "title": "LaBancaUCB API",
-    "description": "Backend LaBancaUCB",
-    "contact": {
-      "name": "LaBancaUCB Team",
-      "email": "ChrisVictor@ucb.edu.bo"
-    },
+    "description": "API para la gestión de la banca en línea de LaBancaUCB",
     "version": "v1"
   },
   "paths": {
+    "/api/admin/cuentas": {
+      "get": {
+        "tags": [
+          "AdminCuentas"
+        ],
+        "summary": "Obtiene una lista paginada de cuentas aplicando filtros opcionales.",
+        "parameters": [
+          {
+            "name": "Estado",
+            "in": "query",
+            "description": "Filtrar por estado de la cuenta.",
+            "schema": {
+              "type": "string",
+              "example": "activa"
+            },
+            "example": "activa"
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "Cantidad de registros por página (por defecto 10, máximo 50).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "Número de página a consultar (empieza en 1).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
+          },
+          {
+            "name": "UsuarioId",
+            "in": "query",
+            "description": "Identificador del usuario titular de la cuenta.",
+            "schema": {
+              "type": "integer",
+              "format": "int64",
+              "example": 101
+            },
+            "example": 101
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retorna la lista paginada de cuentas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autenticado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "No autorizado (rol no es admin)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
+          }
+        }
+      }
+    },
+    "/api/admin/cuentas/{id}/estado": {
+      "put": {
+        "tags": [
+          "AdminCuentas"
+        ],
+        "summary": "Cambia el estado de una cuenta (ej. bloquear, desbloquear, suspender).",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Identificador único de la cuenta.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Objeto con la acción a realizar (bloquear, activar, etc.).",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCuentaDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCuentaDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCuentaDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EstadoCuentaDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Estado de la cuenta cambiado exitosamente"
+          },
+          "400": {
+            "description": "Datos inválidos o validación fallida",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autenticado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Cuenta no encontrada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
+          }
+        }
+      }
+    },
+    "/api/admin/prestamos": {
+      "get": {
+        "tags": [
+          "AdminPrestamos"
+        ],
+        "summary": "Obtiene una lista paginada de préstamos.",
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "description": "Número de página (por defecto 1).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "Tamaño de página (por defecto 10).",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Retorna la lista paginada de préstamos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectApiResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
+          }
+        }
+      }
+    },
+    "/api/admin/prestamos/{id}/gestionar": {
+      "put": {
+        "tags": [
+          "AdminPrestamos"
+        ],
+        "summary": "Gestiona (aprueba/rechaza) un préstamo.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Id del préstamo.",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Datos para gestión del préstamo.",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GestionarPrestamoDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GestionarPrestamoDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GestionarPrestamoDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GestionarPrestamoDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Préstamo gestionado correctamente"
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Préstamo no encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
+          }
+        }
+      }
+    },
     "/api/admin/solicitudes": {
       "get": {
         "tags": [
@@ -21,25 +316,34 @@
           {
             "name": "Estado",
             "in": "query",
+            "description": "Filtrar por estado: \"pendiente\", \"aprobado\", \"rechazado\".",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "pendiente"
+            },
+            "example": "pendiente"
           },
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Tamaño de página (máximo 50).",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
@@ -194,6 +498,7 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Realiza login y retorna datos de sesión/token.",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -220,7 +525,34 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Login exitoso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponseDtoApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Request inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Credenciales inválidas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -230,6 +562,7 @@
         "tags": [
           "BalanceResponse"
         ],
+        "summary": "Obtiene el balance para los datos suministrados en el DTO.",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -256,7 +589,25 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna el objeto con la información de balance",
+            "content": {
+              "application/json": {
+                "schema": { }
+              }
+            }
+          },
+          "400": {
+            "description": "Request inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -266,27 +617,54 @@
         "tags": [
           "Beneficiarios"
         ],
+        "summary": "Obtiene los beneficiarios del usuario autenticado (paginado).",
         "parameters": [
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Cantidad de elementos por página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página (empieza en 1).",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista paginada de beneficiarios",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BeneficiarioDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       },
@@ -294,6 +672,7 @@
         "tags": [
           "Beneficiarios"
         ],
+        "summary": "Inserta un nuevo beneficiario para el usuario autenticado.",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -320,7 +699,27 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Beneficiario registrado exitosamente"
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -330,39 +729,160 @@
         "tags": [
           "Cuenta"
         ],
+        "summary": "Obtiene las cuentas asociadas al usuario autenticado, con paginación.",
         "parameters": [
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Cantidad de elementos por página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página (empieza en 1).",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista paginada de cuentas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Token inválido o usuario no identificado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
     },
-    "/": {
-      "get": {
+    "/api/pagos-qr/pagar": {
+      "post": {
         "tags": [
-          "LaBancaUCB.Api"
+          "PagosQr"
         ],
+        "summary": "Procesa un pago a través de código QR.",
+        "requestBody": {
+          "description": "Datos necesarios para procesar el pago.",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarPagoQrDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarPagoQrDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarPagoQrDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProcesarPagoQrDto"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Pago procesado correctamente"
+          },
+          "401": {
+            "description": "Token inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/pagos-qr/generar": {
+      "post": {
+        "tags": [
+          "PagosQr"
+        ],
+        "summary": "Genera un código QR para iniciar un pago.",
+        "requestBody": {
+          "description": "Datos necesarios para generar el QR.",
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarQrDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarQrDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarQrDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarQrDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Código generado correctamente"
+          },
+          "401": {
+            "description": "Token inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -372,7 +892,9 @@
         "tags": [
           "Prestamos"
         ],
+        "summary": "Solicita un nuevo préstamo.",
         "requestBody": {
+          "description": "Datos del préstamo (monto, plazo, etc.).",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -398,7 +920,40 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Solicitud de préstamo registrada correctamente"
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autenticado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "No autorizado (rol no es cliente)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -408,7 +963,10 @@
         "tags": [
           "Security"
         ],
+        "summary": "Registra un nuevo usuario en el sistema.",
+        "description": "El password será hasheado antes de persistir la entidad.",
         "requestBody": {
+          "description": "DTO con la información del usuario a registrar.",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -434,7 +992,27 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Usuario registrado correctamente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SecurityDtoApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -444,7 +1022,9 @@
         "tags": [
           "Seguros"
         ],
+        "summary": "Solicita un nuevo seguro (vida, auto, hogar, etc.).",
         "requestBody": {
+          "description": "Datos del seguro (tipo, cobertura, etc.).",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -470,7 +1050,40 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Solicitud de seguro registrada correctamente"
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autenticado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "No autorizado (rol no es cliente)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -480,7 +1093,9 @@
         "tags": [
           "Solicitudes"
         ],
+        "summary": "Solicita una nueva tarjeta (crédito o débito).",
         "requestBody": {
+          "description": "Datos de la solicitud de tarjeta (tipo, línea de crédito, etc.).",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -506,7 +1121,40 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Solicitud de tarjeta registrada correctamente"
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autenticado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "No autorizado (rol no es cliente)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -516,7 +1164,9 @@
         "tags": [
           "Token"
         ],
+        "summary": "Genera un token JWT para el usuario que haga login correctamente.",
         "requestBody": {
+          "description": "Credenciales del usuario (login/password).",
           "content": {
             "application/json-patch+json": {
               "schema": {
@@ -542,7 +1192,30 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna el token JWT"
+          },
+          "401": {
+            "description": "Credenciales inválidas",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -552,55 +1225,94 @@
         "tags": [
           "Transaccion"
         ],
+        "summary": "Obtiene el historial de transacciones del usuario autenticado.",
         "parameters": [
           {
             "name": "Estado",
             "in": "query",
+            "description": "Estado de la transacción.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "completada"
+            },
+            "example": "completada"
           },
           {
             "name": "Tipo",
             "in": "query",
+            "description": "Tipo de transacción.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "transferencia"
+            },
+            "example": "transferencia"
           },
           {
             "name": "Glosa",
             "in": "query",
+            "description": "Texto a buscar en la glosa.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "servicio"
+            },
+            "example": "servicio"
           },
           {
             "name": "Fecha",
             "in": "query",
+            "description": "Fecha específica (formato YYYY-MM-DD).",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "2025-03-15"
+            },
+            "example": "2025-03-15"
           },
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Tamaño de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista paginada de transacciones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransaccionDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Token inválido o usuario no identificado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       }
@@ -610,10 +1322,12 @@
         "tags": [
           "Transaccion"
         ],
+        "summary": "Obtiene el historial de un cliente por su Id (solo admin).",
         "parameters": [
           {
             "name": "idUsuario",
             "in": "path",
+            "description": "Identificador del usuario al que se desea ver su historial",
             "required": true,
             "schema": {
               "type": "integer",
@@ -623,7 +1337,24 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna el historial del cliente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransaccionDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -633,6 +1364,7 @@
         "tags": [
           "Transacciones"
         ],
+        "summary": "Crea una transferencia al exterior (cliente).",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -659,7 +1391,32 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Transferencia creada",
+            "content": {
+              "application/json": {
+                "schema": { }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -669,55 +1426,91 @@
         "tags": [
           "Transacciones"
         ],
+        "summary": "Historial de transacciones del usuario autenticado (paginado).",
         "parameters": [
           {
             "name": "Estado",
             "in": "query",
+            "description": "Estado de la transacción.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "completada"
+            },
+            "example": "completada"
           },
           {
             "name": "Tipo",
             "in": "query",
+            "description": "Tipo de transacción.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "transferencia"
+            },
+            "example": "transferencia"
           },
           {
             "name": "Glosa",
             "in": "query",
+            "description": "Texto a buscar en la glosa.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "servicio"
+            },
+            "example": "servicio"
           },
           {
             "name": "Fecha",
             "in": "query",
+            "description": "Fecha específica (formato YYYY-MM-DD).",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "2025-03-15"
+            },
+            "example": "2025-03-15"
           },
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Tamaño de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista paginada de transacciones",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ObjectApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -727,10 +1520,12 @@
         "tags": [
           "TransaccionesAdmin"
         ],
+        "summary": "Lista transferencias filtradas por estado.",
         "parameters": [
           {
             "name": "estado",
             "in": "query",
+            "description": "Estado en el que se encuentra la transaccion",
             "schema": {
               "type": "string"
             }
@@ -738,7 +1533,17 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista de transferencias"
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -748,10 +1553,12 @@
         "tags": [
           "TransaccionesAdmin"
         ],
+        "summary": "Aprueba una transferencia.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador del usuario al que se le va a aprobar la transaccion",
             "required": true,
             "schema": {
               "type": "integer",
@@ -761,7 +1568,17 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Transferencia aprobada"
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -771,10 +1588,12 @@
         "tags": [
           "TransaccionesAdmin"
         ],
+        "summary": "Rechaza una transferencia con motivo.",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador del usuario al que se le va a rechazar la transaccion",
             "required": true,
             "schema": {
               "type": "integer",
@@ -808,7 +1627,17 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Transferencia rechazada"
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -818,41 +1647,74 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Obtiene la lista paginada de usuarios (solo admin).",
         "parameters": [
           {
             "name": "Rol",
             "in": "query",
+            "description": "Filtrar por rol.",
             "schema": {
-              "type": "string"
-            }
+              "type": "string",
+              "example": "cliente"
+            },
+            "example": "cliente"
           },
           {
             "name": "Activo",
             "in": "query",
+            "description": "Filtrar por estado activo.",
             "schema": {
-              "type": "boolean"
-            }
+              "type": "boolean",
+              "example": true
+            },
+            "example": true
           },
           {
             "name": "PageSize",
             "in": "query",
+            "description": "Tamaño de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 10
+            },
+            "example": 10
           },
           {
             "name": "PageNumber",
             "in": "query",
+            "description": "Número de página.",
             "schema": {
               "type": "integer",
-              "format": "int32"
-            }
+              "format": "int32",
+              "example": 1
+            },
+            "example": 1
           }
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna la lista paginada de usuarios",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsuarioDtoIEnumerableApiResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Error interno del servidor"
           }
         }
       },
@@ -860,6 +1722,7 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Inserta un nuevo usuario (solo admin).",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -885,8 +1748,25 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "201": {
+            "description": "Usuario creado correctamente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsuarioDtoApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -896,10 +1776,12 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Obtiene un usuario por Id (solo admin).",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador del usuario",
             "required": true,
             "schema": {
               "type": "integer",
@@ -909,7 +1791,34 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna el usuario solicitado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsuarioDtoApiResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Usuario no encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -917,10 +1826,12 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Actualiza un usuario (solo admin).",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador del usuario",
             "required": true,
             "schema": {
               "type": "integer",
@@ -954,7 +1865,24 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Usuario actualizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UsuarioDtoApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Datos inválidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -962,10 +1890,12 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Elimina un usuario (solo admin).",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "Identificador del usuario",
             "required": true,
             "schema": {
               "type": "integer",
@@ -974,8 +1904,18 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Eliminado correctamente"
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -985,6 +1925,7 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Cambia la contraseña del usuario autenticado.",
         "requestBody": {
           "content": {
             "application/json-patch+json": {
@@ -1011,7 +1952,17 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Contraseña actualizada"
+          },
+          "401": {
+            "description": "No autorizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -1024,19 +1975,26 @@
         "properties": {
           "estado": {
             "type": "string",
-            "nullable": true
+            "description": "Identificador único de la solicitud.",
+            "nullable": true,
+            "example": "12075"
           },
           "observacionAdmin": {
             "type": "string",
-            "nullable": true
+            "description": "Estado actual de la solicitud (pendiente, aprobado, rechazado).",
+            "nullable": true,
+            "example": "pendiente"
           },
           "montoAprobado": {
             "type": "number",
+            "description": "Fecha en que se creó la solicitud.",
             "format": "double",
-            "nullable": true
+            "nullable": true,
+            "example": "2025-03-15T10:30:00Z"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Representa una solicitud que será administrada por un administrador."
       },
       "AdminManageSolicitudDtoIEnumerableApiResponse": {
         "type": "object",
@@ -1059,67 +2017,117 @@
         "properties": {
           "transaccionId": {
             "type": "integer",
-            "format": "int64"
+            "description": "Identificador de la transacción a gestionar.",
+            "format": "int64",
+            "example": 10045
           },
           "motivo": {
             "type": "string",
-            "nullable": true
+            "description": "Motivo de la acción (obligatorio si es rechazo, opcional si es aprobación).",
+            "nullable": true,
+            "example": "Fondos insuficientes en cuenta origen."
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Datos para que un administrador realice una acción sobre una transferencia (ej. aprobar, rechazar)."
       },
       "BalanceDto": {
         "type": "object",
         "properties": {
           "idUsuario": {
-            "nullable": true
+            "type": "integer",
+            "description": "Identificador del usuario titular.",
+            "format": "int64",
+            "example": 101
           },
           "idCuenta": {
-            "nullable": true
+            "type": "integer",
+            "description": "Identificador de la cuenta.",
+            "format": "int64",
+            "example": 5001
           },
           "nombreCompleto": {
-            "nullable": true
+            "type": "string",
+            "description": "Nombre completo del titular.",
+            "nullable": true,
+            "example": "Juan Pérez Gómez"
           },
           "balance": {
             "type": "number",
-            "format": "double"
+            "description": "Saldo actual de la cuenta.",
+            "format": "double",
+            "example": 12500.75
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Representa el balance de una cuenta, incluyendo datos del titular y la cuenta."
       },
       "BeneficiarioDto": {
         "type": "object",
         "properties": {
           "idBeneficiario": {
             "type": "integer",
-            "format": "int64"
+            "description": "Identificador único del beneficiario.",
+            "format": "int64",
+            "example": 202
           },
           "idUsuarioOwner": {
             "type": "integer",
-            "format": "int64"
+            "description": "Identificador del usuario propietario (quien registró al beneficiario).",
+            "format": "int64",
+            "example": 101
           },
           "alias": {
             "type": "string",
-            "nullable": true
+            "description": "Alias opcional que el usuario asigna al beneficiario.",
+            "nullable": true,
+            "example": "Hermano"
           },
           "numeroCuentaDestino": {
             "type": "string",
-            "nullable": true
+            "description": "Número de cuenta de destino del beneficiario.",
+            "nullable": true,
+            "example": "000123456789"
           },
           "bancoDestino": {
             "type": "string",
-            "nullable": true
+            "description": "Nombre del banco destino.",
+            "nullable": true,
+            "example": "Banco de Crédito"
           },
           "nombreTitular": {
             "type": "string",
-            "nullable": true
+            "description": "Nombre completo del titular de la cuenta destino.",
+            "nullable": true,
+            "example": "María López"
           },
           "esExterior": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": "Indica si la cuenta destino es en el extranjero.",
+            "example": false
           },
           "creadoEn": {
             "type": "string",
+            "description": "Fecha de creación del beneficiario (formato ISO).",
+            "nullable": true,
+            "example": "2025-03-20T14:30:00Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Información de un beneficiario registrado por un usuario para realizar transferencias frecuentes."
+      },
+      "BeneficiarioDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BeneficiarioDto"
+            },
             "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
           }
         },
         "additionalProperties": false
@@ -1129,14 +2137,19 @@
         "properties": {
           "passwordActual": {
             "type": "string",
-            "nullable": true
+            "description": "Contraseña actual del usuario.",
+            "nullable": true,
+            "example": "MiClaveActual123"
           },
           "passwordNueva": {
             "type": "string",
-            "nullable": true
+            "description": "Nueva contraseña (mínimo 8 caracteres, debe incluir mayúscula, número y símbolo).",
+            "nullable": true,
+            "example": "NuevaClave$456"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Datos necesarios para cambiar la contraseña de un usuario."
       },
       "CrearPrestamoDto": {
         "type": "object",
@@ -1158,7 +2171,8 @@
             "format": "int32"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "DTO utilizado para crear un prestamo por parte del administrador."
       },
       "CrearSeguroDto": {
         "type": "object",
@@ -1180,33 +2194,231 @@
             "format": "double"
           }
         },
+        "additionalProperties": false,
+        "description": "DTO utilizado para crear diferentes tipos de seguros para ofrecer al cliente."
+      },
+      "CuentaDto": {
+        "type": "object",
+        "properties": {
+          "idCuenta": {
+            "type": "integer",
+            "description": "Identificador único de la cuenta.",
+            "format": "int64",
+            "example": 5001
+          },
+          "numeroCuenta": {
+            "type": "string",
+            "description": "Número de cuenta (formato IBAN o local).",
+            "nullable": true,
+            "example": "0001234567890123"
+          },
+          "tipoCuenta": {
+            "type": "string",
+            "description": "Tipo de cuenta: \"ahorro\", \"corriente\", \"empresarial\".",
+            "nullable": true,
+            "example": "ahorro"
+          },
+          "saldo": {
+            "type": "number",
+            "description": "Saldo actual de la cuenta.",
+            "format": "double",
+            "example": 12500.75
+          },
+          "moneda": {
+            "type": "string",
+            "description": "Moneda de la cuenta (ISO 4217).",
+            "nullable": true,
+            "example": "PEN"
+          },
+          "estado": {
+            "type": "string",
+            "description": "Estado de la cuenta: \"activa\", \"bloqueada\", \"suspendida\", \"cerrada\".",
+            "nullable": true,
+            "example": "activa"
+          },
+          "fechaApertura": {
+            "type": "string",
+            "description": "Fecha de apertura (formato ISO).",
+            "nullable": true,
+            "example": "2025-01-10T09:00:00Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Información de una cuenta bancaria."
+      },
+      "CuentaDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CuentaDto"
+            },
+            "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
+          }
+        },
         "additionalProperties": false
+      },
+      "EstadoCuentaDto": {
+        "type": "object",
+        "properties": {
+          "accion": {
+            "type": "string",
+            "description": "Acción a realizar: \"bloquear\", \"activar\", \"suspender\".",
+            "nullable": true,
+            "example": "bloquear"
+          },
+          "motivo": {
+            "type": "string",
+            "description": "Motivo del cambio de estado (obligatorio si la acción es bloquear o suspender).",
+            "nullable": true,
+            "example": "Fraude detectado"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Datos para cambiar el estado de una cuenta (bloquear, activar, suspender)."
+      },
+      "GenerarQrDto": {
+        "type": "object",
+        "properties": {
+          "idCuentaReceptora": {
+            "type": "integer",
+            "description": "Identificador de la cuenta que recibirá el pago.",
+            "format": "int64",
+            "example": 5001
+          },
+          "montoFijo": {
+            "type": "number",
+            "description": "Monto fijo solicitado (si es variable, dejar nulo y marcar LaBancaUCB.Core.DTOs.GenerarQrDto.EsMontoVariable como true).",
+            "format": "double",
+            "nullable": true,
+            "example": 150.00
+          },
+          "esMontoVariable": {
+            "type": "boolean",
+            "description": "Indica si el monto puede ser definido por el pagador al momento del pago.",
+            "example": true
+          },
+          "descripcion": {
+            "type": "string",
+            "description": "Descripción opcional del pago (ej. \"Pago de servicios\").",
+            "nullable": true,
+            "example": "Factura luz marzo"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Datos para generar un código QR asociado a una cuenta para recibir pagos."
+      },
+      "GestionarPrestamoDto": {
+        "type": "object",
+        "properties": {
+          "montoAprobado": {
+            "type": "number",
+            "description": "Monto aprobado (puede ser menor al solicitado).",
+            "format": "double",
+            "example": 5000.00
+          },
+          "tasaInteres": {
+            "type": "number",
+            "description": "Tasa de interés anual aplicada (en porcentaje).",
+            "format": "double",
+            "example": 12.5
+          },
+          "estado": {
+            "type": "string",
+            "description": "Nuevo estado del préstamo: \"aprobado\", \"rechazado\", \"pagado\".",
+            "nullable": true,
+            "example": "aprobado"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Datos para que un administrador gestione (apruebe/rechace) un préstamo."
       },
       "GestionarSolicitudDto": {
         "type": "object",
         "properties": {
           "estado": {
             "type": "string",
-            "description": "Estado a establecer "
+            "description": "Estado a establecer ",
+            "example": "aprobado"
           },
           "observacionAdmin": {
             "type": "string",
             "description": "",
-            "nullable": true
+            "nullable": true,
+            "example": "Su solicitud ha sido aprobada exitosamente"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "DTO utilizado para enviar la acción de gestión (aprobar/rechazar) sobre una solicitud."
       },
       "LoginDto": {
         "type": "object",
         "properties": {
           "email": {
             "type": "string",
-            "nullable": true
+            "description": "Correo electrónico del usuario.",
+            "nullable": true,
+            "example": "usuario@example.com"
           },
           "password": {
             "type": "string",
-            "nullable": true
+            "description": "Contraseña del usuario.",
+            "nullable": true,
+            "example": "MiClave123"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Credenciales de inicio de sesión."
+      },
+      "LoginResponseDto": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string",
+            "description": "Token JWT para autenticación en futuras peticiones.",
+            "nullable": true,
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+          },
+          "email": {
+            "type": "string",
+            "description": "Correo del usuario autenticado.",
+            "nullable": true,
+            "example": "usuario@example.com"
+          },
+          "nombreCompleto": {
+            "type": "string",
+            "description": "Nombre completo del usuario.",
+            "nullable": true,
+            "example": "Juan Pérez"
+          },
+          "rol": {
+            "type": "string",
+            "description": "Rol del usuario: \"admin\", \"cliente\".",
+            "nullable": true,
+            "example": "cliente"
+          },
+          "expiracion": {
+            "type": "string",
+            "description": "Fecha y hora de expiración del token.",
+            "format": "date-time",
+            "example": "2025-12-31T23:59:59Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Respuesta después de un login exitoso, contiene el token JWT."
+      },
+      "LoginResponseDtoApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/LoginResponseDto"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
           }
         },
         "additionalProperties": false
@@ -1249,6 +2461,18 @@
         },
         "additionalProperties": false
       },
+      "ObjectApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
+          }
+        },
+        "additionalProperties": false
+      },
       "ProblemDetails": {
         "type": "object",
         "properties": {
@@ -1276,6 +2500,32 @@
         },
         "additionalProperties": { }
       },
+      "ProcesarPagoQrDto": {
+        "type": "object",
+        "properties": {
+          "idCuentaOrigen": {
+            "type": "integer",
+            "description": "Cuenta de origen desde la que se debita el dinero.",
+            "format": "int64",
+            "example": 5002
+          },
+          "codigoHash": {
+            "type": "string",
+            "description": "Hash único del QR escaneado.",
+            "nullable": true,
+            "example": "a1b2c3d4e5f6..."
+          },
+          "montoIngresado": {
+            "type": "number",
+            "description": "Monto a pagar (requerido si el QR tiene monto variable).",
+            "format": "double",
+            "nullable": true,
+            "example": 250.00
+          }
+        },
+        "additionalProperties": false,
+        "description": "Datos para procesar un pago mediante código QR."
+      },
       "RoleType": {
         "enum": [
           0,
@@ -1289,18 +2539,37 @@
         "properties": {
           "login": {
             "type": "string",
-            "nullable": true
+            "description": "Correo electrónico (usado como login).",
+            "nullable": true,
+            "example": "admin@labanca.com"
           },
           "password": {
             "type": "string",
-            "nullable": true
+            "description": "Contraseña en texto plano (será hasheada).",
+            "nullable": true,
+            "example": "Admin123!"
           },
           "name": {
             "type": "string",
-            "nullable": true
+            "description": "Nombre completo del usuario.",
+            "nullable": true,
+            "example": "Administrador del Sistema"
           },
           "role": {
             "$ref": "#/components/schemas/RoleType"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Datos para crear o actualizar un usuario (administrativo)."
+      },
+      "SecurityDtoApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/SecurityDto"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
           }
         },
         "additionalProperties": false
@@ -1317,6 +2586,102 @@
             "nullable": true
           }
         },
+        "additionalProperties": false,
+        "description": "DTO utilizado para enviar la solicitud de creacion de tarjeta de credito."
+      },
+      "TransaccionDto": {
+        "type": "object",
+        "properties": {
+          "idTransaccion": {
+            "type": "integer",
+            "description": "Identificador de la transacción.",
+            "format": "int64",
+            "example": 6001
+          },
+          "idCuentaOrigen": {
+            "type": "integer",
+            "description": "Cuenta origen (id).",
+            "format": "int64",
+            "example": 5001
+          },
+          "idCuentaDestino": {
+            "type": "string",
+            "description": "Cuenta destino (número de cuenta).",
+            "nullable": true,
+            "example": "000987654321"
+          },
+          "nombreDestino": {
+            "type": "string",
+            "description": "Nombre del titular destino.",
+            "nullable": true,
+            "example": "Ana Rodríguez"
+          },
+          "tipo": {
+            "type": "string",
+            "description": "Tipo de transacción: \"transferencia\", \"pago_qr\", \"retiro\", \"depósito\".",
+            "nullable": true,
+            "example": "transferencia"
+          },
+          "monto": {
+            "type": "number",
+            "description": "Monto de la transacción.",
+            "format": "double",
+            "example": 250.00
+          },
+          "moneda": {
+            "type": "string",
+            "description": "Moneda de la transacción.",
+            "nullable": true,
+            "example": "PEN"
+          },
+          "tipoCambio": {
+            "type": "number",
+            "description": "Tipo de cambio aplicado (si aplica).",
+            "format": "double",
+            "example": 3.75
+          },
+          "glosa": {
+            "type": "string",
+            "description": "Glosa o descripción.",
+            "nullable": true,
+            "example": "Pago de servicios"
+          },
+          "estado": {
+            "type": "string",
+            "description": "Estado: \"completada\", \"pendiente\", \"rechazada\".",
+            "nullable": true,
+            "example": "completada"
+          },
+          "referenciaQr": {
+            "type": "string",
+            "description": "Referencia del QR si fue un pago con QR.",
+            "nullable": true,
+            "example": "qr_hash_abc123"
+          },
+          "fechaHora": {
+            "type": "string",
+            "description": "Fecha y hora de la transacción (formato ISO).",
+            "nullable": true,
+            "example": "2025-03-15T14:30:00Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Información de una transacción (transferencia, pago, etc.)."
+      },
+      "TransaccionDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TransaccionDto"
+            },
+            "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
+          }
+        },
         "additionalProperties": false
       },
       "TransferenciaExteriorDto": {
@@ -1324,43 +2689,62 @@
         "properties": {
           "cuentaOrigenId": {
             "type": "integer",
-            "format": "int64"
+            "description": "Cuenta origen (id).",
+            "format": "int64",
+            "example": 5001
           },
           "monto": {
             "type": "number",
-            "format": "double"
+            "description": "Monto a transferir.",
+            "format": "double",
+            "example": 1000.00
           },
           "monedaOrigen": {
             "type": "string",
-            "nullable": true
+            "description": "Moneda de origen (ej. PEN).",
+            "nullable": true,
+            "example": "PEN"
           },
           "monedaDestino": {
             "type": "string",
-            "nullable": true
+            "description": "Moneda de destino (ej. USD).",
+            "nullable": true,
+            "example": "USD"
           },
           "cuentaDestino": {
             "type": "string",
-            "nullable": true
+            "description": "Número de cuenta destino (internacional).",
+            "nullable": true,
+            "example": "CH1234567890123456789"
           },
           "bancoDestino": {
             "type": "string",
-            "nullable": true
+            "description": "Nombre del banco destino.",
+            "nullable": true,
+            "example": "Bank of America"
           },
           "paisDestino": {
             "type": "string",
-            "nullable": true
+            "description": "País destino (código ISO 3166-1 alpha-2).",
+            "nullable": true,
+            "example": "US"
           },
           "referencia": {
             "type": "string",
-            "nullable": true
+            "description": "Referencia o concepto.",
+            "nullable": true,
+            "example": "Envío familiar"
           },
           "fechaProgramada": {
             "type": "string",
+            "description": "Fecha programada (opcional, si es futura).",
             "format": "date-time",
-            "nullable": true
+            "nullable": true,
+            "example": "2025-04-01T00:00:00Z"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "Datos para realizar una transferencia internacional."
       },
       "UserLogin": {
         "type": "object",
@@ -1381,35 +2765,79 @@
         "properties": {
           "idUsuario": {
             "type": "integer",
-            "format": "int64"
+            "description": "Identificador del usuario.",
+            "format": "int64",
+            "example": 101
           },
           "email": {
             "type": "string",
-            "nullable": true
+            "description": "Correo electrónico.",
+            "nullable": true,
+            "example": "juan.perez@example.com"
           },
           "nombreCompleto": {
             "type": "string",
-            "nullable": true
+            "description": "Nombre completo.",
+            "nullable": true,
+            "example": "Juan Pérez Gómez"
           },
           "passwordHash": {
             "type": "string",
+            "description": "Hash de la contraseña (no se devuelve normalmente).",
             "nullable": true
           },
           "rol": {
             "type": "string",
-            "nullable": true
+            "description": "Rol: \"admin\" o \"cliente\".",
+            "nullable": true,
+            "example": "cliente"
           },
           "activo": {
             "type": "boolean",
-            "nullable": true
+            "description": "Indica si la cuenta está activa (no suspendida).",
+            "nullable": true,
+            "example": true
           },
           "bloqueado": {
             "type": "boolean",
-            "nullable": true
+            "description": "Indica si la cuenta está bloqueada por intentos fallidos.",
+            "nullable": true,
+            "example": false
           },
           "fechaDeCreacion": {
             "type": "string",
+            "description": "Fecha de creación del usuario.",
+            "nullable": true,
+            "example": "2025-01-10T08:00:00Z"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Información de un usuario del sistema."
+      },
+      "UsuarioDtoApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$ref": "#/components/schemas/UsuarioDto"
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioDtoIEnumerableApiResponse": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioDto"
+            },
             "nullable": true
+          },
+          "meta": {
+            "$ref": "#/components/schemas/Metadata"
           }
         },
         "additionalProperties": false
@@ -1417,6 +2845,12 @@
     }
   },
   "tags": [
+    {
+      "name": "AdminCuentas"
+    },
+    {
+      "name": "AdminPrestamos"
+    },
     {
       "name": "AdminSolicitudes"
     },
@@ -1433,7 +2867,7 @@
       "name": "Cuenta"
     },
     {
-      "name": "LaBancaUCB.Api"
+      "name": "PagosQr"
     },
     {
       "name": "Prestamos"

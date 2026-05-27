@@ -8,12 +8,14 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace LaBancaUCB.Api.Controllers;
 
 [Authorize]
 [ApiController]
 [Route("api/[controller]")]
+[Produces("application/json")]
 public class CuentaController : ControllerBase
 {
     private readonly ICuentaService _cuentaService;
@@ -25,6 +27,17 @@ public class CuentaController : ControllerBase
         _mapper = mapper;
     }
 
+    /// <summary>
+    /// Obtiene las cuentas asociadas al usuario autenticado, con paginación.
+    /// </summary>
+    /// <param name="filters">Filtros de paginación (pageNumber, pageSize).</param>
+    /// <returns>Lista paginada de cuentas del usuario.</returns>
+    /// <response code="200">Retorna la lista paginada de cuentas</response>
+    /// <response code="401">Token inválido o usuario no identificado</response>
+    /// <response code="500">Error interno del servidor</response>
+    [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(ApiResponse<IEnumerable<CuentaDto>>))]
+    [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+    [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
     [HttpGet("mis-cuentas")]
     public async Task<ActionResult> GetMisCuentas([FromQuery] PaginationFilter filters)
     {
@@ -34,7 +47,12 @@ public class CuentaController : ControllerBase
             return Unauthorized(new { message = "Token inválido o usuario no identificado" });
         }
 
-        var pagedCuentas = await _cuentaService.GetCuentasByUsuarioIdAsync(idUsuario, filters);
+        // Get all accounts for the user (service only accepts user id)
+        var cuentas = await _cuentaService.GetCuentasByUsuarioIdAsync(idUsuario);
+
+        // Create a paged list from the IEnumerable result using the provided pagination filters
+        var pagedCuentas = PagedList<Core.Entities.Cuenta>.Create(cuentas, filters.PageNumber, filters.PageSize);
+
         var cuentasDto = _mapper.Map<IEnumerable<CuentaDto>>(pagedCuentas);
 
         var response = new Api.Response.ApiResponse<IEnumerable<CuentaDto>>(cuentasDto)

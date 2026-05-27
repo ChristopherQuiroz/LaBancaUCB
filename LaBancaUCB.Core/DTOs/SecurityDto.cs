@@ -1,18 +1,33 @@
 ﻿using LaBancaUCB.Core.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace LaBancaUCB.Core.DTOs
+namespace LaBancaUCB.Core.DTOs;
+
+/// <summary>
+/// Datos para crear o actualizar un usuario (administrativo).
+/// </summary>
+public class SecurityDto
 {
-    public class SecurityDto
-    {
-        public string Login { get; set; } = null!;
+    /// <summary>
+    /// Correo electrónico (usado como login).
+    /// </summary>
+    /// <example>admin@labanca.com</example>
+    public string Login { get; set; } = null!;
 
-        public string Password { get; set; } = null!;
+    /// <summary>
+    /// Contraseña en texto plano (será hasheada).
+    /// </summary>
+    /// <example>Admin123!</example>
+    public string Password { get; set; } = null!;
 
-        public string Name { get; set; } = null!;
+    /// <summary>
+    /// Nombre completo del usuario.
+    /// </summary>
+    /// <example>Administrador del Sistema</example>
+    public string Name { get; set; } = null!;
 
-        public RoleType? Role { get; set; }
-    }
+    /// <summary>
+    /// Rol asignado (admin, cliente, etc.).
+    /// </summary>
+    /// <example>admin</example>
+    public RoleType? Role { get; set; }
 }

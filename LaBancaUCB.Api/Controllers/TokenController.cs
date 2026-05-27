@@ -6,6 +6,7 @@ using LaBancaUCB.Services.Interfaces;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Net;
 
 namespace LaBancaUCB.Api.Controllers
 {
@@ -18,18 +19,31 @@ namespace LaBancaUCB.Api.Controllers
         private readonly IPasswordService _passwordService;
 
         public TokenController(IConfiguration configuration,
-            ISecurityService securityService)
+            ISecurityService securityService,
+            IPasswordService passwordService)
         {
             _configuration = configuration;
             _securityService = securityService;
+            _passwordService = passwordService;
         }
 
+        /// <summary>
+        /// Genera un token JWT para el usuario que haga login correctamente.
+        /// </summary>
+        /// <param name="userLogin">Credenciales del usuario (login/password).</param>
+        /// <returns>Token JWT en caso de éxito.</returns>
+        /// <response code="200">Retorna el token JWT</response>
+        /// <response code="401">Credenciales inválidas</response>
+        /// <response code="500">Error interno del servidor</response>
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Unauthorized)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
         [HttpPost("login")]
-        public async Task<IActionResult> Login(UserLogin userLogin)
+        public async Task<IActionResult> Login([FromBody] UserLogin userLogin)
         {
             // Validar que el usuario sea válido
             var validation = await IsValidUser(userLogin);
-            if (validation.Item1)
+            if (validation.Item1 && validation.Item2 is not null)
             {
                 var token = GenerateToken(validation.Item2);
                 return Ok(new { token });
@@ -38,11 +52,27 @@ namespace LaBancaUCB.Api.Controllers
             return Unauthorized();
         }
 
-        private async Task<(bool, Security)> IsValidUser(UserLogin userLogin)
+        private async Task<(bool, Security?)> IsValidUser(UserLogin userLogin)
         {
             var user = await _securityService.GetLoginByCredentials(userLogin);
-            var isValid = _passwordService.Check(user.Password, userLogin.Password);
-            return (isValid, user);
+            if (user is null) return (false, null);
+
+            var isValid = _password_service_safecheck(user.Password, userLogin.Password);
+            return (isValid, isValid ? user : null);
+        }
+
+        // Helper to guard against nulls from service
+        private bool _password_service_safecheck(string? storedHash, string providedPlain)
+        {
+            if (string.IsNullOrEmpty(storedHash)) return false;
+            try
+            {
+                return _passwordService.Check(storedHash, providedPlain);
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private string GenerateToken(Security user)
